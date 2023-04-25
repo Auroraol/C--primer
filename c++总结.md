@@ -1331,7 +1331,7 @@ printf("%s", p);
      ```c++
      字节数:  sizeof(类型) * 元素个数
      
-     字符串: sizeof(name)
+     字符串长度: sizeof(name)  字符串文本写入时长度计算使用strlens，二进制写入时使用sizeof
          
      数组长度:  arr只能是数组名
      一维:
@@ -1341,11 +1341,10 @@ printf("%s", p);
      int col = sizeof(arr[0]) / sizeof(int);
      //记忆 二维数组名的是 一维指针数组的大小 理解成 一行
      
-     结构体数组长度:
-     int len = sizeof(personArr) / sizeof(struct Person);
-     
      结构体大小:
      sizeof(struct Person)
+     结构体数组长度:
+     int len = sizeof(personArr) / sizeof(struct Person);
      ```
      
      
@@ -3011,13 +3010,12 @@ clog;         //标准日志输出数据到显示器
    	getline(cin, str);
    	cout << "str = " << str << endl;
    }
-   123456
    ```
-
-   ![在这里插入图片描述](c++总结.assets/20190510101456635.PNG)
-
    
-
+   ![在这里插入图片描述](c++总结.assets/20190510101456635.PNG)
+   
+   
+   
 2. 成员函数 **get(variable, Size) ----->与getline的区别:并不会丢弃换行符,留在缓冲区里**    ---最特别
 
    + istream & get(char* , int)
@@ -3969,10 +3967,6 @@ after writing the int '3' to append stream "1 2", str() = "1 23"
 
 
 # c语言文件读写
-
-
-
-
 
 
 
@@ -13645,7 +13639,7 @@ void testTwo()
 
 + printf("%-*s ", field[i].max_length, field[i].name);  这里的 * 是占位符
 
-+   linux才有.  printf("%m\n");  等价 printf("%s",strerror(errno))
++   **linux才有**.  printf("%m\n");  等价 printf("%s",strerror(errno))
 
   ```c
   if (-1 == key) 

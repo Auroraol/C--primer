@@ -5092,8 +5092,12 @@ struct Bf
 ```c
 union tag
 {
-   member;
-   ...
+   int member;
+   struct 
+   {
+       ....
+   }name;
+    ...
 };
 ```
 
