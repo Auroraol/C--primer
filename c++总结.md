@@ -2858,7 +2858,51 @@ clog;         //标准日志输出数据到显示器
      }
      ```
    
+   
+   + ```c++
+     int main(void)
+     {
+     	char choice, ch;
+     	while (true)
+     	{
+     		system("cls");
+     		menu();
+     		choice = _getch();  // 选择菜单项后不需要输入回车直接跳转到相应选项中。
+     		if (choice == '0')
+     		{
+     			cout << "确定退出吗?(输入y确定)" << endl;
+     			ch = _getch();
+     			if (ch == 'y')
+     				break;
+     			else
+     				continue;
+     		}
      
+     		switch (choice)
+     		{
+     		case '1':
+     			matrix_addition();  //矩阵加法
+     			break;
+     			/*	case '2':nummulti(); break;
+     			case '3':matritrans(); break;
+     			case '4':matrimulti(); break;
+     			case '5':hadamulti(); break;
+     			case '6':conv(); break;*/
+     			//case '7':demo(); break;
+     		default:
+     			cout << "\n 输入错误，请从新输入" << endl;
+     		}
+     	}
+     
+     	return 0;
+     }
+     ```
+   
+     
+   
+   
+   
+   
    
    + **读取数字的循环** +   **处理用户去输入字符串的 情况**
    
@@ -2900,6 +2944,24 @@ clog;         //标准日志输出数据到显示器
      ------------
 
   
+
+```c
+cahr c = ' ';
+printf("是否退出?(y/n): ");
+fflush(stdin);//清空输入缓冲区
+scanf("%c", &c);
+if (c == 'y')
+{
+    exit(0);
+}
+else if (c == 'n')
+{
+    system("pause");
+    system("cls");
+}
+```
+
+
 
 3. **成员函数 get(char &)**  ----->读取缓存区中的下一个字符(包括 : 空格、制表符和换行符)  (**一般与循换结合也能显示出字符串的样子**)
 
@@ -3438,6 +3500,20 @@ fcout << a << b << c;
 ```c
 //申请读空间：
 char buf[1024]={0};
+```
+
+
+
+```
+	ifstream fin("B.txt", ios::binary);//以二进制方式打开文件
+	if (!fin.is_open())
+	{
+		cerr << "can not open the input file!" << endl;//输出错误信息并退出
+		exit(1);
+	}
+	istreambuf_iterator<char> beg(fin), end;
+	string content(beg, end); //将文件全部读入string字符串
+	fin.close();
 ```
 
 
@@ -5408,20 +5484,6 @@ vector<int> nums = {2,7,11,15},  result;  // result 定义成一个vector
 
 result = twoSum(nums,target);   /// result 接受 twoSum返回的值
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # 15. ==形参的类型设置==
 
@@ -13995,21 +14057,39 @@ extern  声明使用外部cpp文件的全局变量
 
 
 
+#  github 项目
 
+## 下载
 
+==一般直接使用就用release 版本下载可执行软件, 别去下载源代码==
 
+![](c++总结.assets/image-20230622203324156.png)
 
+##  遇到的问题
 
+[VS2019](https://so.csdn.net/so/search?q=VS2019&spm=1001.2101.3001.7020) 莫名其妙出现:
 
+C2059 语法错误:"}"
 
+C2143 语法错误:缺少";"（在"}"的前面）
 
+C2447   “{”: 缺少函数标题(是否是老式的形式表?)
 
+C2065 [未定义标识符](https://so.csdn.net/so/search?q=未定义标识符&spm=1001.2101.3001.7020)
 
+C2039 ""不是""的成员
 
+等错误，看代码其实完全没有任何问题，究竟是怎么回事呢？
 
+![img](c++总结.assets/8c0efd1c136347a797e11eed70e6f2fa.png)
 
+**两种可能问题:**
 
+①==找到相关行附近的注释，特别是中文注释，把注释删掉就行了。==
 
+②==点击文件->高级保存选项->将编码从 utf8 改为 简体中文(GB18030)即可.(注意头文件源文件都修改)==
+
+出错原因应该是负责代码文件到其他计算机上时打开的文件编码不一致.
 
 
 

@@ -53,7 +53,7 @@ int main(void)
 
 > rectangle(int x1,int y1,int x2,int y2);  //以（x1，y1）为**左上顶点**（x2,y2）为**右下顶点**画矩形
 
-### 3.画线条 line(int x1,int y1,int x2,int y2) 
+### 3.画线条 line(int x1,int y1,int x2,int y2)
 
 > line(int x1,int y1,int x2,int y2) ;  //连接（x1，y1）和（x2，y2）的一条线段
 
