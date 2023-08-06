@@ -3170,7 +3170,6 @@ int main()
 
 C++类中用virtual修饰函数虚函数,构造函数没有虚构造函数，存在虚析构函数，C++所有函数 都是一个指针去存储的，所以具有虚函数的类，内存会增加一个指针大小的内存。
 
-```C++
 #include <iostream>
 #include <string>
 using namespace std;
@@ -3193,7 +3192,7 @@ public:
 	void print() 
 	{
 
-	}
+​	}
 protected:
 
 };
@@ -3211,7 +3210,6 @@ int main()
 	pf2();
 	return 0;
 }
-```
 
 ## 纯虚函数
 

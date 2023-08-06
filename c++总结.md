@@ -1175,8 +1175,8 @@ int main(int argc,char *argv[])
 字符常量:  
 
 + 使用单引号 如:  's' 对应ascii码的83.    注意: "s" 实际上表示所在的地址. 
-
 + 严格意义来说字符就是   特殊字符 + 0-9数字字符 + 英文大小写字符   **不如 不能定义字符' 77 '**
++ ‘\0'是字符数组里的结束标志，库中的strcpy在复制完字符串时给你加上了'\0'结束符，所以不须要你再添加。而如果是你对字符数组操作时就要加，比如你把A串的字符复制给B，B[i++] = A[j++];复制完最后一个时你就要加上'\0'。B[i]=0;/B[i] = '\0'；
 
 ---------------
 
@@ -1385,6 +1385,8 @@ printf("%s", p);
 
 5. strncpy (拷贝到位置 , 起始,  个数)  strncpy为拷贝n个  [字符串到目标数组，目标数组应比n要大]
 
+   拷贝字符串用`strncpy()`函数更加安全
+
    
 
 6. **memcpy**(str1, cstr2, size_t n)    **str2** -- 指向要复制的数据源， **n** -- 要被复制的字节数。   //从前开始覆盖原有部分数据:    **常用于内存之间的拷贝 **比如拷贝数组
@@ -1438,8 +1440,6 @@ printf("%s", p);
    1
    ```
 
-
-
 8. **memset** 按字节对内存进行初始化  
 
    **常用来字符串清零,   或者一维指针数组用来置0操作,  整个结构体置0**  这里的0包括nULL 和 "  "
@@ -1490,6 +1490,11 @@ printf("%s", p);
     当s1<s2时， 返回值 <0；
     当s1==s2时，返回值 =0；
     当s1>s2时， 返回值 >0。
+        
+    int strncmp(const char *str1, const char *str2, size_t n)
+    - 如果返回值 < 0，则表示 str1 小于 str2。
+    - 如果返回值 > 0，则表示 str2 小于 str1。
+    - 如果返回值 = 0，则表示 str1 等于 str2。
     ```
 
     ```c++
@@ -2043,6 +2048,15 @@ int k=str1.find_first_of(str2);    //k返回的值是about这5个字符中任何
     
     // 结果
     345
+        
+    // 去除字符串前后空格
+    void trim(string& s)
+    {
+    if (s.empty())
+    	return;
+    s.erase(0, s.find_first_not_of(" "));  //查找第一个不是空格的字符的位置并擦除该位置之前的所有字符来删除任何前导空格
+    s.erase(s.find_last_not_of(" ") + 1);  //查找最后一个不是空格的字符的位置并擦除该位置之后的所有字符来删除任何尾随空格
+    }  
     ```
 
     
@@ -2252,7 +2266,40 @@ if (s == ' ')    // 判空
 
 
 
+### 6. 高效的字符串拼接
 
+1. 使用+=运算符：std::string类重载了+=运算符，可以直接使用该运算符来拼接字符串，例如：
+
+```c++
+std::string result;
+result += "Hello ";
+result += "World!";
+```
+
+这种方式会改变原始字符串对象，因此在循环中频繁拼接大量字符串时，可能会产生较多的临时对象和内存分配，影响性能。
+
+1. 使用std::stringstream类：std::stringstream是一个基于流的字符串处理类，可以用于高效地拼接字符串。例如：
+
+```c++
+std::stringstream ss;
+ss << "Hello ";
+ss << "World!";
+std::string result = ss.str();
+```
+
+这种方式不会产生额外的临时对象，只需要一个std::stringstream对象和一个std::string对象，适用于需要频繁拼接字符串的场景。
+
+1. 使用std::string的append函数：std::string类提供了append函数，可以将另一个字符串追加到当前字符串的末尾。例如：
+
+```c++
+std::string result;
+result.append("Hello ");
+result.append("World!");
+```
+
+这种方式与使用+=运算符类似，也会改变原始字符串对象，并且在循环中频繁拼接大量字符串时，也可能产生较多的临时对象和内存分配。
+
+需要注意的是，在进行大量字符串拼接操作时，尽量避免使用+运算符，因为每次使用+运算符都会创建一个新的临时对象，产生额外的内存分配和拷贝开销。在性能要求较高的情况下，可以选择使用std::stringstream类或者std::string的append函数来进行高效的字符串拼接。
 
 
 
@@ -2385,6 +2432,45 @@ int main(void)
 ```
 
 ![image-20221021122216499](c++总结.assets/image-20221021122216499.png)
+
+C11之后的标准，这两者实现相同的功能。
+C11之前，这两者的主要区别在于data()返回指针是否可以指向不以‘0’结尾的字符数组。
+
+## C++ string类c_str()与data()的区别
+
+####  1.c_str()
+
+```cpp
+const CharT* c_str() const;
+1
+```
+
+返回一个指向一个以空字符’\0’结尾的字符数组的指针，其数据类型与字符串中存储的数据相同。
+
+```c++
+char* c = new char;  
+std::string s = "1234";  
+// c = s.c_str();  //不建议这样写
+strcpy_s(c, s.size() + 1, s.c_str());  
+std::cout << c << std::endl; //输出：1234  
+s = "abcd";  
+std::cout << c << std::endl; //输出：1234  
+```
+
+
+
+#### 2.data()
+
+```cpp
+const CharT* data() const;
+1
+```
+
+**注意：**
+**c++11之前**，其返回的指针可以不指向以空字符’0’结尾的数组。
+**c++11之后**：与c_str()功能相同，返回一个指向一个以空字符’\0’结尾的字符数组的指针。
+
+
 
 一、转换表格
 
@@ -2646,7 +2732,7 @@ void main()
 
 
 
-## 三 、 参数类型string的引用 和const char*合理性分析
+## 三 、 参数类型string的引用 和const char* 和 char* 分析
 
 函数参数使用string的引用还是const char*，哪个更合适？
 
@@ -2710,13 +2796,12 @@ int main()
 
   
 
-**分析 函数的参数为char * 的情况(实参只能是一个数组):**
+**分析 函数的参数为char * 的情况(实参只能是一个char数组):**
 
 注意: char数组      不同于常规的数组 需要把数组个数写出来
 
 ```cpp
-size_t myStrlen(char *s)  /*注定了这个函数的实参只能是一个数组，
-而不能是一个常量,就是char *s = "hello";的s不能被传进来*/ 
+size_t myStrlen(char *s)  /*注定了这个函数的实参只能是一个数组，而不能是一个常量,就是char *s = "hello";的s不能被传进来  myStrlen("第三方") 报错*/ 
 =============或===============
 size_t myStrlen(const char *s)     //实参可以是常量也可以是数组
 {
@@ -4063,8 +4148,6 @@ after writing the int '3' to append stream "1 2", str() = "1 23"
 
 ​	   绝对路径还是比较好掌握的，比如我电脑存在一张图片路径为:C:\Users\lenovo\Pictures\Saved Pictures 			\picture.jpg
 
-​		
-
 ![image-20220722222005547](c++总结.assets/image-20220722222005547.png)
 
 
@@ -4079,7 +4162,6 @@ after writing the int '3' to append stream "1 2", str() = "1 23"
   . ./ 页面所在文件夹上一级目录
   ```
 
-  
 
 1.同一个文件夹下相互引用(同级文件)
 
@@ -5510,7 +5592,7 @@ result = twoSum(nums,target);   /// result 接受 twoSum返回的值
   //方式二:
   int array(int *arr, int n);
   -------------------
-  //二维数组
+  //二维数组   (c++二维数组  行可以省略,  java二维数组 列可以省略)
    int array(int arr2[][4],  int m, int n);
    int array(int (*arr2)[4], int m, int n);   //二维数组名 等价与 一维数组的指针
    int array(int **a, int m, int n ;       // a也是当作数组名
@@ -6171,7 +6253,9 @@ int main
 
 **复制构造函数**(深度去复制一个对象给另一个对象)
 
-记忆:肯定也是构成函数的一种.==参数都加了const==
+记忆:肯定也是构成函数的一种.
+
+==参数都加了const==
 
 **会调用拷贝构造函数的情况 :**
 
@@ -6517,7 +6601,49 @@ int main()
 }
 ```
 
+## default默认构造函数的作用
 
+在C++中约定如果一个类中自定义了带参数的构造函数，那么编译器就不会再自动生成默认构造函数，也就是说该类将不能默认创建对象，只能携带参数进行创建一个对象；
+
+但有时候需要创建一个默认的对象但是类中编译器又没有自动生成一个默认构造函数，那么为了让编译器生成这个默认构造函数就需要default这个属性。
+
+先看例子：
+
+```cpp
+class A
+{
+public:
+A() = default;
+ 
+A(int B) {
+b = B；
+};
+ 
+private:
+int b;
+};
+ 
+// 定义一个默认的对象
+A a；
+//如果没有A() = default; 那么就会报错，或者需要你手动实现一个A() { b =0;}，所以我认为default只是为实现提供了方便；
+ 
+至于系统的实现和我们自己的实现是否完全一致，这个不好确定，感觉也没有必要确定。
+```
+
+编译器生成一个合成版本的构造/析构函数（包括拷贝构造，赋值构造，移动构造，移动赋值构造）
+**关于构造函数：**
+如果用户没有定义，在需要的时候编译器会生成一个默认的构造函数，这个规则你应当是知道的。
+但是，假如用户定义了其他构造函数（比如有参数的，或者参数不同的），那么编译器无论如何就不会再合成默认的构造函数了
+那么如果要使用无参数版本，用户必须显示的定义一个无参版本的构造函数。
+
+如果使用default指示的办法，那么可以产出比用户定义的无参构造函数有更优的代码（毕竟是编译器干活）
+还有一个作用可以让使用者一眼就看出这是一个合成版本的构造函数（相当于知道类的作者没干其他事情）
+
+### 总结：
+
+无论是显式的默认构造函数（=default），还是隐式合成的默认构造函数（编译器生成），都是用来控制默认初始化过程的。它按照如下规则初始化类的数据成员：
+1.如果存在类内的初始值，用它来初始化成员。
+2.如果不存在类内的初始值，默认初始化该成员。
 
 # 继承
 
@@ -14055,74 +14181,71 @@ extern  声明使用外部cpp文件的全局变量
 
 
 
+# 嵌入式之goto
 
+很多书籍都会把“”goto“”当成反面教材使用，认为其如果使用不当，将会造成很多意想不到的问题。但goto作为C语言的一部分，存在即合理，goto有它的缺点，也有它的优点。
+**缺点：**
+很容易把逻辑弄乱，增加理解难度，goto是可以实现无条件跳转的，一旦跳转，就忽略很前面很多代码，特别是在在一些逻辑复杂的地方使用，会很容易出问题。所以goto能不用就不用，特别对于新手的，尽量避讳。
+**优点：**
+方便处理异常情况，特别是内存，系统资源的释放。很多大型项目，开源项目，包括Linux内核，都会使用goto来处理异常情况。
+举个例子，以下情况，大家第一反应是没有问题的，其实是存在隐患的。如果变量pdate2申请失败，则退出函数。那么问题来了， pdate 申请成功了，但没有得到释放，出现了内存泄漏。所以这种情况如果使用goto，就很容易解决问题。
 
-#  github 项目
+```c
+int module_init()
+{
+	char *pdate = (char *)malloc(100);
+	if(pdate == NULL)
+	return -1;
+	
+	char *pdate2 = (char *)malloc(100);
+	if(pdate2 == NULL)
+	return -1;
+	
+	free(pdate);
+	free(pdate2);
+	......
+}
+```
 
-## 下载
+**goto实现代码**
 
-==一般直接使用就用release 版本下载可执行软件, 别去下载源代码==
+```c
+int module_init()
+{
+	char *pdate = (char *)malloc(100);
+	if(pdate == NULL)
+	goto err;
+	
+	char *pdate2 = (char *)malloc(100);
+	if(pdate2 == NULL)
+	goto err;
+	
+	free(pdate);
+	free(pdate2);
+	......
 
-![](c++总结.assets/image-20230622203324156.png)
+err:
+	if(pdate != NULL)
+		free(pdate);
+	if(pdate2!= NULL)
+		free(pdate2);
+	return -1;
+}
+```
 
-##  遇到的问题
-
-[VS2019](https://so.csdn.net/so/search?q=VS2019&spm=1001.2101.3001.7020) 莫名其妙出现:
-
-C2059 语法错误:"}"
-
-C2143 语法错误:缺少";"（在"}"的前面）
-
-C2447   “{”: 缺少函数标题(是否是老式的形式表?)
-
-C2065 [未定义标识符](https://so.csdn.net/so/search?q=未定义标识符&spm=1001.2101.3001.7020)
-
-C2039 ""不是""的成员
-
-等错误，看代码其实完全没有任何问题，究竟是怎么回事呢？
-
-![img](c++总结.assets/8c0efd1c136347a797e11eed70e6f2fa.png)
-
-**两种可能问题:**
-
-①==找到相关行附近的注释，特别是中文注释，把注释删掉就行了。==
-
-②==点击文件->高级保存选项->将编码从 utf8 改为 简体中文(GB18030)即可.(注意头文件源文件都修改)==
-
-出错原因应该是负责代码文件到其他计算机上时打开的文件编码不一致.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+总结：存在即合理，goto视情况而定。
 
 
 
+# “{”: 未找到匹配令牌
 
+双击那个状态栏，转换为Windows(CR LF)，即可。
 
+或两边加个空格
 
-
-
-
-
-
-
+```cpp
+/* 我是注释，报错了。 */
+```
 
 
 
@@ -14132,6 +14255,198 @@ C2039 ""不是""的成员
 
 
 
+# C++ 长行字符串多行书写
+
+1. 使用双引号
+
+```
+string testShader = 
+    "uniform mat4 g_mvpMatrix; \n"                    
+    "attribute vec3 position;\n"
+    "void main ()\n"
+    "{\n"
+        "gl_Position = g_mvpMatrix * vec4(position.x, position.y, position.z, 1.0);\n"
+    "}\n";
+```
+
+缺点：需要每行都写‘\n’。更改后如果一行过长还须拆分成两行，比较麻烦。
+
+2. **在字符串换行处加一个反斜杠’\’**
+
+```c++
+string testShader = "uniform mat4 g_mvpMatrix;\n\
+attribute vec3 position;\n\
+void main ()\n\
+{\n\
+    gl_Position = g_mvpMatrix * vec4(position.x, position.y, position.z, 1.0);\n\
+}";
+```
+
+缺点：下一行前不能有空格或者Tab键，否则会有多余空格。需要每行都写‘\n’。
+
+3. **C++11 Raw String Literals**
+   使用`R"(…)"`
+
+```c++
+string testShader = R"(uniform mat4 g_mvpMatrix;
+attribute vec3 position;
+void main ()
+{
+    gl_Position = g_mvpMatrix * vec4(position.x, position.y, position.z, 1.0);
+})";
+```
+
+这个方法最大的好处就是不用每一行打\n了。不过在大部分的文本编辑器中，代码可能会上色不正常。一个hack可以绕开代码上色不正常的问题。
+使用 `R"“(…)”"`
+
+```c++
+string testShader = R""(uniform mat4 g_mvpMatrix;
+attribute vec3 position;
+void main ()
+{
+gl_Position = g_mvpMatrix * vec4(position.x, position.y, position.z, 1.0);
+}
+)"";
+```
+
+不过这个方法只对某一些比较简单的文本编辑器有用。
+
+注：对于着色器代码而言，每行都换行并非必要。这里仅将一段着色器代码作为例子使用。
+
+**测试代码**
+
+```c++
+#include <iostream>
+#include <string>
+
+int main()
+{
+    std::string testShader = 
+    "uniform mat4 g_mvpMatrix; \n"                    
+    "attribute vec3 position;\n"
+    "void main ()\n"
+    "{\n"
+       "gl_Position = g_mvpMatrix * vec4(position.x, position.y, position.z, 1.0);\n"
+    "}\n";
+     std::cout << "文本结尾不会换行,可以手动添加换行符"<< std::endl;
+    std::cout << testShader;
+   
+
+    std::string testShader2 = "uniform mat4 g_mvpMatrix;\n\
+attribute vec3 position;\n\
+void main ()\n\
+{\n\
+    gl_Position = g_mvpMatrix * vec4(position.x, position.y, position.z, 1.0);\n\
+}\n";
+   std::cout << "文本结尾不会换行,可以手动添加换行符"<< std::endl;
+   std::cout << testShader2;
+ 
+
+    std::string testShader3 = R"(uniform mat4 g_mvpMatrix;
+attribute vec3 position;
+void main ()
+{
+    gl_Position = g_mvpMatrix * vec4(position.x, position.y, position.z, 1.0);
+})";
+    std::cout << testShader3 ;
+    std::cout << "R""()""文本完全一致" << std::endl;
+
+    std::string testShader4 = R"(uniform mat4 g_mvpMatrix;
+attribute vec3 position;
+void main ()
+{
+    gl_Position = g_mvpMatrix * vec4(position.x, position.y, position.z, 1.0);
+}
+   )";
+    std::cout << testShader4;
+    std::cout << "R""()""文本完全一致";
+
+    return 0;
+}
+```
+
+![image-20230803173822376](c++总结.assets/image-20230803173822376.png)
+
+**注意:**
+
+![image-20230803174252576](c++总结.assets/image-20230803174252576.png)
+
+
+
+# C++string = ""和 string = " " 的区别
+
+在于赋给引用变量的值。
+
+`string& semester = ""` 将一个空字符串赋给了 `semester` 引用变量。这意味着 `semester` 引用了一个空字符串对象，可以通过该引用来访问和修改该字符串的内容。
+
+示例：
+
+```
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string str = "";
+    std::string& semester = str;
+    
+    std::cout << semester << std::endl; // 输出空字符串
+    
+    semester = "Hello";
+    std::cout << semester << std::endl; // 输出 "Hello"
+    
+    return 0;
+}
+```
+
+`string& semester = " "` 尝试将一个字符串字面量赋给了 `semester` 引用变量。然而，字符串字面量是常量，无法直接赋给非常量引用变量。
+
+示例：
+
+```
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string& semester = " "; // 编译错误
+
+    return 0;
+}
+```
+
+在上述示例中，编译器会报错，因为不能将字符串字面量赋给非常量引用。如果你想要声明一个常量引用，需要使用 `const` 关键字：
+
+```
+#include <iostream>
+#include <string>
+
+int main() {
+    const std::string& semester = " ";
+    
+    std::cout << semester << std::endl; // 输出空格
+    
+    return 0;
+}
+```
+
+在这个示例中，我们声明了一个常量引用 `const std::string& semester`，它引用了字符串字面量，并且可以通过该引用来访问字符串的内容。
+
+总结来说：
+
+- `string& semester = ""` 将 `semester` 引用绑定到一个空字符串对象。
+- `string& semester = " "` 试图将 `semester` 引用绑定到一个字符串字面量，这是非法的。如果希望引用一个字符串字面量，应该使用 `const` 关键字声明常量引用。
+
+**总结: c++中空字符用""**
+
+
+
+
+
+# 在C语言中，`char * name = "";` 和 `char * name = " ";` 的区别如下：
+
+1. `char * name = "";` 表示将一个空字符串赋值给指针 `name`。空字符串是由两个连续的空字符 `\0` 组成，代表了一个空的字符串。
+2. `char * name = " ";` 表示将一个由一个空格字符组成的字符串赋值给指针 `name`。这个字符串包含一个空格字符和一个结束字符 `\0`，它代表了一个只有一个空格的字符串。
+
+总结：两者的主要区别在于，前者是一个完全空的字符串，而后者是一个空格字符构成的字符串。
 
 
 
