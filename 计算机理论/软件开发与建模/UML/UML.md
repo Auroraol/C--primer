@@ -397,230 +397,14 @@ public class Part {
 
 ![20220922204521](image/UML/20220922204521.png)
 
-
-## 对象创建
-- 类在编译时定义，对象在运行时作为类的实例创建
-- 创建一个新Part对象的Java语句
-  ```java
-  Part myScrew = new Part("screw", 28834, 0.02) ;
-  ```
-- Part对象的UML表示
-  ![20220920125336](image/UML/20220920125336.png)
-
-
-## 对象的特性
-- 对象是具有状态、行为和唯一标识的某事物
-- 状态（state）
-  - 包含在对象属性中的数据值通常称为对象的状态
-  - 这些数据值会随系统变化而改变，结果是对象的状态可以改变
-  - 在OOPL中，对象的状态由对象所属类定义的域指定，在UML中由类的属性指定
-- 行为
-  - 在OOPL中，对象的操作在类中定义为一组方法，即接口
-  - 在UML中，操作不出现在对象图标中
-- 唯一标识（identity）
-  - 对象模型假定为每个对象提供唯一标识，作为区别于其他对象的标志。
-  - 每个对象和其他所有对象都是可区别的，即使两个对象保存完全相同的数据，并在接口中提供完全相同的操作集合。
-    - 下面的代码创建两个状态相同的对象，但它们是不同的对象。
-      ```java
-      Part screw1 = new Part("screw", 28834, 0.02) ;
-      Part screw2 = new Part("screw", 28834, 0.02) ;
-      ```
-  - 对象的标识是对象模型固有的一部分，不同于对象中存储的任何其他数据项。 设计人员不需要定义一个特殊数据来区分类的各个实例。
-    - 有时应用领域会包含对每个对象都不相同的真实数据项，例如各种识别号码，这些数据项通常作为属性建模。
-
-
-## 避免数据重复
-- 对零件建模的方法简单直接，实用吗？
-  - 缺点是描述给定类型零件的数据是重复的
-- 至少存在着三个问题
-  - 数据高度冗余，耗费存储
-  - 数据的重复可能会导致维护问题
-    - 如果零件的成本变了，每个受影响的对象中的成本属性都需要更新
-  - 需要永久保存零件的目录信息
-    - 在某些情况下，特定类型的零件对象可能不存在，例如，零件还没有制造出来。倘若这样，就没有地方保存目录信息。
-    - 不可能容许只有在零件存在时才能保存目录信息
-
-
-## 零件类的新设计
-- 另一种设计方法
-  - 将描述给定类型零件的公共信息保存在另外的对象中
-  - 这种“描述符”对象并不表示单个零件，而是表示与描述一类零件的目录条目（catalogue entry）相关的信息
-  - 新设计要求，对于每种不同类型的零件，都有一个目录条目对象，用来保存该类型零件的名字、查找号和成本。
-  - Part对象不再保存数据。要查找一个零件，需要访问描述该零件的目录条目对象。
-
-
-## 目录条目描述的零件
-![20220920125612](image/UML/20220920125612.png)
-
-
-## 零件类的新设计（续）
-- 这种设计解决了上列3个问题
-  - 数据只存储在一处，因而没有冗余。
-  - 修改给定种类零件的数据很直接
-    - 如果某种零件的成本改变了，只需要更新一个属性，即相应的目录条目对象中的成本属性。
-  - 目录条目对象，即使在没有Part对象与之相关联时，也可以存在，因而解决了在创建零件之前如何保存零件信息的问题。
-
-
-## 链（link）
-- 库存控制程序的设计包括了两类的对象
-  - 目录条目对象保存适用于给定类型的所有零件的信息
-  - 每个零件对象表示一个实际零件
-- 这两个类之间存在的关系
-  - 为了获得对零件的完整描述，需要查看的不仅是零件对象，还要查看相关的描述零件的目录条目对象。
-  - 这意味着对每个零件对象，系统必须记录哪个目录条目对象在描述它
-  - 实现这种关系一般方法是每个零件对象包含一个到相关目录条目的引用，如下列Java代码所示
-
-```java
-public class CatalogueEntry {
-    private String name ;
-    private long number ;
-    private double cost ;
-    public CatalogueEntry(String nm, long num, double cst) {
-        name = nm ; number = num ; cost = cst ;
-    }
-    public String getName() { return name ; }
-    public long getNumber() { return number ; }
-    public double getCost() { return cost ; }
-}
-public class Part {
-    private CatalogueEntry entry ;
-    public Part(CatalogueEntry e) { entry = e ; }
-}
-//-----------------------------------------------
-CatalogueEntry screw = new CatalogueEntry("screw", 28834, 0.02) ;
-Part s1 = new Part(screw) ;
-Part s2 = new Part(screw) ;
-```
-
-- 链的UML表示法
-  - 对象保存另一对象的引用，在这两个对象之间画一个链来表示
-  - 链表示为从保存引用的对象指向被引用对象的箭头，箭头表示只能在一个方向上遍历或导航；
-  - 在箭头上可以标示保存引用的域的名字；
-
-  ![20220920130054](image/UML/20220920130054.png)
-
-
-## 对象图（object diagram）
-- 对象图展现对象和对象之间的链
-  - 对象图是以可视形式表示对象网络结构的一种方式，它给出了系统中的数据在给定时刻的一个“快照”。
-  - 在相互链接的对象结构中，信息用两种不同的方法记录：
-    - 一些数据作为属性保存在对象中
-    - 另一些信息在结构上依靠链保存的
-    - 例如，零件属于给定类型的事实是通过零件对象和相应的目录条目之间的链表示的：系统中并没有明确记录零件的类型的数据项。
-
-
-## 关联（association）
-- 关联和链
-  - 如同用类定义一组相似对象的公共结构一样，对象之间的链的共同特性通过相应的类之间的关系定义
-- 在UML中，类之间的数据关系称为关联
-  - 链是关联的实例，就如同对象是类的实例一样
-
-![20220920130248](image/UML/20220920130248.png)
-
-
-## 类图（class diagrams）
-- 类图中包含类和关联
-  - 对象图显示系统的对象网络结构的许多特定状态，类图则以一种更一般的方式指定了系统的任何合法状态都必须满足的特性。
-- 如果对象图满足类图中定义的各种约束，那么对象图是类图的实例
-  - 例如，上图表示库存控制系统的对象图可以包含“Part”和“CatalogueEntry”类的实例，并且每个Part对象必须链接到恰好一个CatalogueEntry 对象
-  - 假如程序中存在两个目录条目间的链接，或者零件没有链接到一个目录条目，就会出现错误，程序处于非法状态
-
-
-## 消息传递
-- 面向对象程序中的数据是分布在系统的对象之中的
-  - 一些数据作为属性值保存
-  - 对象之间的链接也含有信息，描述对象之间保持的关系
-- 信息分布意味着为了完成系统的任何功能，一般而言都需要多个对象进行交互
-  - 假设想要为Part类增加一个方法cost来查询一个零件的成本；
-  - 表示零件成本的数据值并没有保存在零件对象中，而是保存在零件引用的目录条目对象中
-  - 新方法必须调用目录条目类中的getCost()方法
-
-```java
-public class Part {
-    public double cost() { return entry.getCost(); }
-    private CatalogueEntry entry ;
-}
-//如果客户持有一个Part的引用并要查询它的成本
-//可以如下调用cost方法。
-Part s1 = new Part(screw);
-double s1cost = s1.cost();
-```
-
-- UML将方法调用表示为从一个对象发送到另一对象的消息
-  - 当对象调用另一对象的方法时，可以看作是请求被调用的对象执行某些处理，这个请求作为消息建模。
-  - 上面的代码中调用s1.cost()的消息如图
-    ![20220920130438](image/UML/20220920130438.png)
-- 对象在接收到消息时，通常会以某种方式响应
-  ![20220920130518](image/UML/20220920130518.png)
-
+# OOPL
 
 ## 多态性
+
 - 库存控制程序还必须能够记录零件如何装配成组件
   ![20220920130538](image/UML/20220920130538.png)
 
 
-## 关联名
-- Assembly和Part之间的关联
-  - Assembly中包含哪些Part，用连接组件对象和零件对象的链表示
-  - 这些链用了关联名“contains”标示，没有用角色名
-  - 关联名描述链接的对象之间具有什么关系
-
-![20220920130621](image/UML/20220920130621.png)
-
-
-## Assembly怎么建模？
-- 将组件简单地作为一组零件建模是不够的
-  - 组件可以有层次结构，零件能够装配为子组件，子组件可以和其他子组件与零件装配在一起，形成更高层次的组件
-- 为了实现层次结构，组件必须能包含零件和其他组件
-
-![20220920130719](image/UML/20220920130719.png)
-
-
-## 多态性的实现
-- UML是强类型的，不允许链接连接任意类的对象
-  - 对上图所示的多态链接，必需指定能够参与链接的类的范围
-- 通常的实现方法是定义一个更一般的类，并说明希望链接的特殊类是这个一般类的特化。
-  - 库存控制程序中想要建立的模型是：组件能由构件组成，而每个构件可以是一个子组件或是一个零件。这样就能够规定‘contains’链接把组件对象连接到构件对象，而按照定义，构件对象要么是Part对象，要么是表示子组件的其他Assembly对象。
-
-
-## Java中多态性的实现
-- 在面向对象语言中，使用继承机制实现多态性
-  - 定义一个构件类Component，将Part类和Assembly类定义为Component类的子类
-
-```java
-public abstract class Component { ... }
-public class Part extends Component { ... }
-public class Assembly extends Component {
-    private ArrayList<Component> components = new ArrayList<>() ;
-    public void add(Component c) { components.add (c) ; }
-}
-```
-
-
-## UML中的多态性
-- 多态性的Java实现由两种不同机制相互作用而产生
-  - 第一，定义Assembly类使得它能够保存对多个构件对象的引用
-  - 第二，用继承定义子类，表示现有的不同类型的构件
-- UML的特化（specialization）和泛化（generalization）
-  - Java的“extends”关系在UML中用类之间的特化关系表示：如果类E是通过扩展类C而定义的，那么就说E是C的特化。
-  - 如果从超类比子类有更大范围的关系的角度看，这种关系也被称为泛化：等价的描述可以说C是E的泛化。
-
-
-## 构件之间的泛化关系
-- 泛化和关联的不同
-  - 泛化没有在对象图中出现的“实例”
-  - 关联描述的是对象能够链接到一起的方式，泛化描述的则是一个类的对象能被另一类的对象替换的情形。
-  - 重数的概念不适用于泛化，一般也不标注泛化关系
-
-![20220920131038](image/UML/20220920131038.png)
-
-
-## 层次结构Assembly的模型
-![20220920131059](image/UML/20220920131059.png)
-
-
-## 层次中的消息传递
-![20220920131117](image/UML/20220920131117.png)
 
 
 ## 动态绑定（dynamic binding）
@@ -637,7 +421,7 @@ public class Assembly extends Component {
 
 
 
-# 类图和对象图
+# 类图
 
 > 对系统的逻辑结构建模 
 
@@ -649,6 +433,35 @@ public class Assembly extends Component {
 - 类图和对象图是两种最重要的静态模型
   - 对象图提供系统的一个“快照”，显示在给定时间实际存在的对象以及它们之间的链接
   - 类图是一种系统规约，规定可以存在什么类型的对象，这些对象封装什么数据，系统中的对象如何彼此关联在一起
+
+## 类图（class diagram）
+
+- 类图中包含的元素
+  - 类、接口
+  - 依赖、关联、泛化关系
+  - 通用元素：注释、约束
+- 类图的用途
+  - 对系统词汇表建模
+  - 对简单协作建模
+  - 对逻辑数据库模式建模
+  - 正向工程和逆向工程
+
+![20220922205155](image/UML/20220922205155.png)
+
+## 与类图相关的图
+
+- 对象图
+  - 显示类如何在运行时作为对象实例活跃起来，显示运行时配置
+- 组合结构图
+  - 显示了上下文相关的类图和模式
+- 序列图和通信图
+  - 确定系统中类的职责后，通常会创建序列图和通信图显示各部分之间的交互
+- 包图
+  - 将类组织成包也很常见，包图允许在更高级别查看依赖关系，了解软件的稳定性
+
+## 注释体
+
+<img src="UML.assets/image-20230920235710476.png" alt="image-20230920235710476" style="zoom: 67%;" />
 
 ## 类（class）
 
@@ -663,6 +476,53 @@ public class Assembly extends Component {
   - 封装使类能够向外部世界隐藏其工作方式的内部细节，只公开可访问的操作和数据
 - UML的类表示法
   <img src="image/UML/20220920201100.png" alt="20220920201100" style="zoom:67%;" />
+
+## 抽象类（abstract class）
+
+- 抽象操作
+  - 有时，当使用泛化来声明一个可重用的泛型类时，可能无法实现通用类所需的所有行为
+  - 抽象操作不包含方法实现，它实际上是一个占位符，表示“把这个行为的实现留给子类”。
+  - 如果类的任何部分被声明为抽象的，那么类本身也要声明为抽象的
+- 抽象类
+  - 通过用斜体书写类名称来表示
+
+<img src="image/UML/20220920203605.png" alt="20220920203605" style="zoom:80%;" />
+
+
+## 接口（interface）
+
+- 接口
+  - 接口是没有相应方法实现的操作的集合，非常类似于只包含抽象方法的抽象类
+  - 将接口视为一个非常简单的契约，它声明“这些操作必须由打算满足此契约的类实现”。
+  - 有时接口也会包含属性，此时通常是静态的并且是常量
+  - 在C++中，接口被实现为不包含操作实现的抽象类；在Java 和 C#中，接口具有自己的专门构造
+- 接口和抽象类
+  - 接口往往比抽象类更安全，避免了与多重继承相关的许多问题
+- 接口表示法
+  - 构造型的类符号
+    - `<<interface>>`
+  - 接口图标符号
+
+<img src="image/UML/20220920203701.png" alt="20220920203701" style="zoom:80%;" />
+
+## 模板（template）
+
+### 表示方法
+
+- 模板类
+  - 参数化的类，泛型类
+- 表示法
+  <img src="image/UML/20220920203823.png" alt="20220920203823" style="zoom:80%;" />
+
+### 模板参数绑定
+
+- 模板类的实例化
+- 显式模板参数绑定
+  - `<<bind>>`依赖
+    ![20220922205110](image/UML/20220922205110.png)
+- 隐式模板参数绑定
+  - 类名中加绑定表达式
+    ![20220922205052](image/UML/20220922205052.png)
 
 ## 类的UML画法
 
@@ -799,57 +659,12 @@ private:
 
 ​      <img src="image/UML/20220920201738.png" alt="20220920201738" style="zoom:80%;" />
 
-## 组织属性和操作
-
-- 构造型（stereotype）
-                                <img src="image/UML/20220920201816.png" alt="20220920201816" style="zoom: 80%;" />
-- 类的责任（responsibility）责任是类的契约或义务
-
-![20220920201829](image/UML/20220920201829.png)
-
-
-## Instance and Static Scope
-- 实例和静态作用域
-  - 特征的作用域指定类的每个实例是否具有自己独特的特征值，或者是否只有一个特征值由所有类实例共享
-  - 可以为类的属性和操作指定作用域，UML中有两种owner scope
-- 实例（instance）
-  - 类的每个实例都拥有自己的特征值。 默认设置，不需要额外符号
-- 静态（static）
-  - 对于类的所有实例，只有一个特征值。 也被称为类作用域
-  - 通过在功能字符串下划线表示
-
-
-## static特征
-- static属性和操作
-  - UML中的操作和属性可以声明为static
-  - 表示法：加下画线
-- 应用示例：Singleton 设计模式
-  - 该设计模式确保在系统的生命周期内只构造特定类的一个对象
-  - 为了确保只构造一个对象，单例模式的典型实现是持有对单个对象实例的内部静态引用，并使用静态操作控制对该实例的访问
-- 类的重数表示法
-
-## 建模技术
-
-- 类常用来对问题或解决方案中的抽象建模
-  - 系统词汇、系统中职责的分布、数据类型
-- 系统词汇建模
-  - 确定用户或实现者用来描述问题或解决方案的事物
-    - 使用 CRC 卡和基于用例的分析有助于找到这些抽象
-  - 对于每个抽象，确定一组职责
-    - 确保每个类都有清晰的定义，并且所有类之间的职责平衡良好
-  - 为每个类提供执行这些职责所需的属性和操作
-  - 例：零售系统的系统词汇建模
-
-![20220920201949](image/UML/20220920201949.png)
-
-
 ## 类图中的关系（relationship）
+
 - 关联、聚合、组合
 - 泛化（generalization）
 - 依赖（dependency）
 - 实现（realization）
-
-## 类之间的关系
 
 <img src="image/UML/20220920202014.png" alt="20220920202014" style="zoom: 55%;" />
 
@@ -943,6 +758,8 @@ public:
 关联的类型:  自关联，二元关联，n元关联（一对一（员工->工牌），一对多（部门->员工），多对多（商店->商品）
 
 <img src="UML.assets/image-20230912224711314.png" alt="image-20230912224711314" style="zoom:67%;" />
+
+<img src="UML.assets/20220920130248.png" alt="20220920130248" style="zoom:67%;" />
 
 #### 单向关联关系
 
@@ -1172,7 +989,7 @@ private:
 代码实现组合关系，通常在整体类的构造方法中直接实例化成员类，因为组合关系的整体和部分是共生关
 系，如果通过外部注入，那么即使整体不存在，那么部分还是存在的，这就相当于变成了一种聚合关系了。
 
-### 关联关系、聚合关系、组合关系之间的区别
+#### 关联关系、聚合关系、组合关系之间的区别
 
 关联和聚合的区别主要在于语义上：关联的两个对象之间一般是平等的，聚合则一般是不平等的。
 聚合和组合的区别则在语义和实现上都有差别：组合的两个对象之间生命周期有很大的关联，被组合的对象
@@ -1195,28 +1012,12 @@ private:
 
 ==表现形式：虚线+空心三角形，三角形指向接口==
 
-
-
-## 课堂练习
-
-### 关联和重数
-- Define multiplicities for the following associations:
-  - (a) ‘Has on loan’, linking people to books in a library system.
-  - (b) ‘Has read’, linking people to books.
-  - (c) ‘Is occupying’, linking chess pieces to squares on a chess board.
-  - (d) ‘Spouse’, linking class ‘Person’ to itself.
-  - (e) ‘Parent’, linking class ‘Person’ to itself.
-
-### 阅读类图
-![20220920203057](image/UML/20220920203057.png)
-
-### 结构型关系
-![20220920203131](image/UML/20220920203131.png)
-
-### 类和关系建模
-- Draw a class diagram summarizing the following facts about a library.
-
-For each book held by the library, the catalogue contains the title, author’s name and ISBN number of the book. There may be multiple copies of a book in the library. Each copy of a book has a unique accession number. There are many registered readers belonging to the library, each of whom is issued with a number of tickets. The system records the name and address of each reader, and the number of tickets that they have been issued with. Readers can borrow one book for each ticket that they possess, and the system keeps a record of which books a reader has borrowed, along with the date that the book must be returned by.
+- 实现接口的类和接口之间的关系
+- 实现关系的表示法
+  - 构造型：空心三角箭头虚线
+    ![20220920203746](image/UML/20220920203746.png)
+  - 图标表示：实线
+    ![20220920203758](image/UML/20220920203758.png)
 
 ### 继承关系
 
@@ -1300,7 +1101,7 @@ public:
 在UML中，抽象类无论类名还是抽象方法名，都以斜体的方式表示，因为这也是一种继承关系，所以子类与
 父类通过带空心三角形的实线来联系。
 
-## 泛化（generalization）
+**补充**
 
 - 泛化关系
   - 泛化是一般事物（称为超类或父类）与更具体的事物（称为子类或子类）之间的关系。
@@ -1319,8 +1120,8 @@ public:
 
 单继承和多继承 ![20220920203424](image/UML/20220920203424.png)
 
+#### 泛化和继承
 
-## 建模技术——泛化和继承
 - 继承建模
   - 在对系统词汇进行建模时，会遇到结构或行为与其他类相似的类
   - 可以将其中的每一个建模为不同且不相关的抽象；
@@ -1332,111 +1133,123 @@ public:
 - 一组从交易应用程序中提取的类
   ![20220920203538](image/UML/20220920203538.png)
 
+## 组织属性和操作
 
-## 抽象类（abstract class）
-- 抽象操作
-  - 有时，当使用泛化来声明一个可重用的泛型类时，可能无法实现通用类所需的所有行为
-  - 抽象操作不包含方法实现，它实际上是一个占位符，表示“把这个行为的实现留给子类”。
-  - 如果类的任何部分被声明为抽象的，那么类本身也要声明为抽象的
-- 抽象类
-  - 通过用斜体书写类名称来表示
+- 构造型（stereotype）
+      <img src="image/UML/20220920201816.png" alt="20220920201816" style="zoom: 80%;" />
+- 类的责任（responsibility）责任是类的契约或义务
 
-![20220920203605](image/UML/20220920203605.png)
+![20220920201829](image/UML/20220920201829.png)
 
 
-## 接口（interface）
-- 接口
-  - 接口是没有相应方法实现的操作的集合，非常类似于只包含抽象方法的抽象类
-  - 将接口视为一个非常简单的契约，它声明“这些操作必须由打算满足此契约的类实现”。
-  - 有时接口也会包含属性，此时通常是静态的并且是常量
-  - 在C++中，接口被实现为不包含操作实现的抽象类；在Java 和 C#中，接口具有自己的专门构造
-- 接口和抽象类
-  - 接口往往比抽象类更安全，避免了与多重继承相关的许多问题
-- 接口表示法
-  - 构造型的类符号
-    - `<<interface>>`
-  - 接口图标符号
+## static特征
 
-![20220920203701](image/UML/20220920203701.png)
+- static属性和操作
+  - UML中的操作和属性可以声明为static
+  - 表示法：加下画线
+- 应用示例：Singleton 设计模式
+  - 该设计模式确保在系统的生命周期内只构造特定类的一个对象
+  - 为了确保只构造一个对象，单例模式的典型实现是持有对单个对象实例的内部静态引用，并使用静态操作控制对该实例的访问
+- 类的重数表示法
 
-## 实现（realization）关系
+## 案例
 
-- 实现接口的类和接口之间的关系
-- 实现关系的表示法
-  - 构造型：空心三角箭头虚线
-    ![20220920203746](image/UML/20220920203746.png)
-  - 图标表示：实线
-    ![20220920203758](image/UML/20220920203758.png)
+### 关联和重数
+- Define multiplicities for the following associations:
+  - (a) ‘Has on loan’, linking people to books in a library system.
+  - (b) ‘Has read’, linking people to books.
+  - (c) ‘Is occupying’, linking chess pieces to squares on a chess board.
+  - (d) ‘Spouse’, linking class ‘Person’ to itself.
+  - (e) ‘Parent’, linking class ‘Person’ to itself.
 
+### 阅读类图
+![20220920203057](image/UML/20220920203057.png)
 
-## 模板（template）
-- 模板类
-  - 参数化的类，泛型类
-- 表示法
-  ![20220920203823](image/UML/20220920203823.png)
+### 结构型关系
+![20220920203131](image/UML/20220920203131.png)
 
+### 类和关系建模
+- Draw a class diagram summarizing the following facts about a library.
 
-## 模板参数绑定
-- 模板类的实例化
-- 显式模板参数绑定
-  - `<<bind>>`依赖
-    ![20220922205110](image/UML/20220922205110.png)
-- 隐式模板参数绑定
-  - 类名中加绑定表达式
-    ![20220922205052](image/UML/20220922205052.png)
+For each book held by the library, the catalogue contains the title, author’s name and ISBN number of the book. There may be multiple copies of a book in the library. Each copy of a book has a unique accession number. There are many registered readers belonging to the library, each of whom is issued with a number of tickets. The system records the name and address of each reader, and the number of tickets that they have been issued with. Readers can borrow one book for each ticket that they possess, and the system keeps a record of which books a reader has borrowed, along with the date that the book must be returned by.
 
-## 类图（class diagram）
-- 类图中包含的元素
-  - 类、接口
-  - 依赖、关联、泛化关系
-  - 通用元素：注释、约束
-- 类图的用途
-  - 对系统词汇表建模
-  - 对简单协作建模
-  - 对逻辑数据库模式建模
-  - 正向工程和逆向工程
+- 
 
-![20220922205155](image/UML/20220922205155.png)
+- - 
 
+# 对象图 (object diagram)
 
-## 与类图相关的图
-- 对象图
-  - 显示类如何在运行时作为对象实例活跃起来，显示运行时配置
-- 组合结构图
-  - 显示了上下文相关的类图和模式
-- 序列图和通信图
-  - 确定系统中类的职责后，通常会创建序列图和通信图显示各部分之间的交互
-- 包图
-  - 将类组织成包也很常见，包图允许在更高级别查看依赖关系，了解软件的稳定性
-
-
-## 对象图（Object Diagram）
 - 对象实例
 - 链（link）
 - 对象图
 
-
 ## 实例（instance）
-- instance和classifier
-  - A classifier is a mechanism that describes structural and behavioral features. Classifiers include classes, associations, interfaces, datatypes, signals, components, nodes, use cases, and subsystems.
-  - An instance is a concrete manifestation of an abstraction to which a set of operations can be applied and which has a state that stores the effects of the operations.
+
+类在编译时定义，对象在运行时作为类的实例创建
+
+创建一个新Part对象的Java语句
+
+```java
+Part myScrew = new Part("screw", 28834, 0.02) ;
+```
+
+Part对象的UML表示
+                                                         ![20220920125336](image/UML/20220920125336.png)
+
 - 对象是类的实例
   ![20220922205310](image/UML/20220922205310.png)
+
 - UML中实例的图形表示
+
   - 命名实例
-    ![20220922205351](image/UML/20220922205351.png)
+
+    ![image-20230920234219940](UML.assets/image-20230920234219940.png)
+
   - 匿名实例
     ![20220922205403](image/UML/20220922205403.png)
 
 
 ## 对象状态
+
 - 带属性值的实例
   ![20220922205439](image/UML/20220922205439.png)
 - 带显式状态的实例
   ![20220922205448](image/UML/20220922205448.png)
 
+## 对象的特性
+
+- 对象是具有状态、行为和唯一标识的某事物
+
+- 状态（state）
+
+  - 包含在对象属性中的数据值通常称为对象的状态
+  - 这些数据值会随系统变化而改变，结果是对象的状态可以改变
+  - 在OOPL中，对象的状态由对象所属类定义的域指定，在UML中由类的属性指定
+
+- 行为
+
+  - 在OOPL中，对象的操作在类中定义为一组方法，即接口
+  - 在UML中，操作不出现在对象图标中
+
+- 唯一标识（identity）
+
+  - 对象模型假定为每个对象提供唯一标识，作为区别于其他对象的标志。
+
+  - 每个对象和其他所有对象都是可区别的，即使两个对象保存完全相同的数据，并在接口中提供完全相同的操作集合。
+
+    - 下面的代码创建两个状态相同的对象，但它们是不同的对象。
+
+      ```java
+      Part screw1 = new Part("screw", 28834, 0.02) ;
+      Part screw2 = new Part("screw", 28834, 0.02) ;
+      ```
+
+  - 对象的标识是对象模型固有的一部分，不同于对象中存储的任何其他数据项。 设计人员不需要定义一个特殊数据来区分类的各个实例。
+
+    - 有时应用领域会包含对每个对象都不相同的真实数据项，例如各种识别号码，这些数据项通常作为属性建模。
 
 ## 链（link）
+
 - 对象之间的链
   - 对象图上的对象之间的链表明这两个对象可以相互通信。
     ![20220922205500](image/UML/20220922205500.png)
@@ -1445,8 +1258,72 @@ public:
   - 如果在两个对象之间创建链接，则类之间必须有相应的关联。
   - 对象之间的链接对应于对象的类之间的关联： 应用于关联上的约束规则，链接必须遵守。
 
+```java
+public class CatalogueEntry {
+    private String name ;
+    private long number ;
+    private double cost ;
+    public CatalogueEntry(String nm, long num, double cst) {
+        name = nm ; number = num ; cost = cst ;
+    }
+    public String getName() { return name ; }
+    public long getNumber() { return number ; }
+    public double getCost() { return cost ; }
+}
+public class Part {
+    private CatalogueEntry entry ;
+    public Part(CatalogueEntry e) { entry = e ; }
+}
+//-----------------------------------------------
+CatalogueEntry screw = new CatalogueEntry("screw", 28834, 0.02) ;
+Part s1 = new Part(screw) ;
+Part s2 = new Part(screw) ;
+```
 
-## 课堂练习——以下对象图合法吗？
+- 链的UML表示法
+
+  - 对象保存另一对象的引用，在这两个对象之间画一个链来表示
+  - 链表示为从保存引用的对象指向被引用对象的箭头，箭头表示只能在一个方向上遍历或导航；
+  - 在箭头上可以标示保存引用的域的名字；
+
+  ![20220920130054](image/UML/20220920130054.png)
+
+## 消息传递
+
+- 面向对象程序中的数据是分布在系统的对象之中的
+  - 一些数据作为属性值保存
+  - 对象之间的链接也含有信息，描述对象之间保持的关系
+- 信息分布意味着为了完成系统的任何功能，一般而言都需要多个对象进行交互
+  - 假设想要为Part类增加一个方法cost来查询一个零件的成本；
+  - 表示零件成本的数据值并没有保存在零件对象中，而是保存在零件引用的目录条目对象中
+  - 新方法必须调用目录条目类中的getCost()方法
+
+```java
+public class Part {
+    public double cost() { return entry.getCost(); }
+    private CatalogueEntry entry ;
+}
+//如果客户持有一个Part的引用并要查询它的成本
+//可以如下调用cost方法。
+Part s1 = new Part(screw);
+double s1cost = s1.cost();
+```
+
+- UML将方法调用表示为从一个对象发送到另一对象的消息
+  - 当对象调用另一对象的方法时，可以看作是请求被调用的对象执行某些处理，这个请求作为消息建模。
+  - 上面的代码中调用s1.cost()的消息如图
+    ![20220920130438](image/UML/20220920130438.png)
+- 对象在接收到消息时，通常会以某种方式响应
+  ![20220920130518](image/UML/20220920130518.png)
+
+ **层次中的消息传递**
+
+![20220920131117](image/UML/20220920131117.png)
+
+
+
+## 以下对象图合法吗
+
 ![20220922205723](image/UML/20220922205723.png)
 
 ![20220922205742](image/UML/20220922205742.png)
@@ -1454,15 +1331,6 @@ public:
 ![20220922205810](image/UML/20220922205810.png)
 
 ![20220922205851](image/UML/20220922205851.png)
-
-
-## 对象图
-- 对象图主要包含对象和链接
-- 对象图与类图相关
-  - 类图描述一般情况，对象图描述从类图派生的具体实例
-- 常见用途
-  - 对系统的静态设计视图或静态交互视图建模时，对象图可以用来对静态数据结构进行建模；使用对象图建模就像使用类图一样，但是是从真实或原型实例的角度来看的
-  - 建模对象结构涉及在给定的时间对系统中的对象进行快照，可以用对象图来可视化、指定、构造和记录系统中某些实例的存在，以及它们之间的关系。
 
 
 ## 小结
