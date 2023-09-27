@@ -629,11 +629,151 @@ public:
 
 ## 对象图
 
+- 对象实例
+- 链（link）
+- 对象图
+
+### 实例（instance）
+
+类在编译时定义，对象在运行时作为类的实例创建
+
+创建一个新Part对象的Java语句
+
+```java
+Part myScrew = new Part("screw", 28834, 0.02) ;
+```
+
+Part对象的UML表示
+                                                         ![20220920125336](UML笔记.assets/20220920125336.png)
+
+- 对象是类的实例
+  ![20220922205310](UML笔记.assets/20220922205310.png)
+
+- UML中实例的图形表示
+
+  - 命名实例
+
+    ![image-20230920234219940](UML笔记.assets/image-20230920234219940.png)
+
+  - 匿名实例
+    ![20220922205403](UML笔记.assets/20220922205403.png)
+
+### 对象状态
+
+- 带属性值的实例
+  ![20220922205439](UML笔记.assets/20220922205439.png)
+- 带显式状态的实例
+  ![20220922205448](UML笔记.assets/20220922205448.png)
+
+### 对象的特性
+
+- 对象是具有状态、行为和唯一标识的某事物
+
+- 状态（state）
+
+  - 包含在对象属性中的数据值通常称为对象的状态
+  - 这些数据值会随系统变化而改变，结果是对象的状态可以改变
+  - 在OOPL中，对象的状态由对象所属类定义的域指定，在UML中由类的属性指定
+
+- 行为
+
+  - 在OOPL中，对象的操作在类中定义为一组方法，即接口
+  - 在UML中，操作不出现在对象图标中
+
+- 唯一标识（identity）
+
+  - 对象模型假定为每个对象提供唯一标识，作为区别于其他对象的标志。
+
+  - 每个对象和其他所有对象都是可区别的，即使两个对象保存完全相同的数据，并在接口中提供完全相同的操作集合。
+
+    - 下面的代码创建两个状态相同的对象，但它们是不同的对象。
+
+      ```java
+      Part screw1 = new Part("screw", 28834, 0.02) ;
+      Part screw2 = new Part("screw", 28834, 0.02) ;
+      ```
+
+  - 对象的标识是对象模型固有的一部分，不同于对象中存储的任何其他数据项。 设计人员不需要定义一个特殊数据来区分类的各个实例。
+
+    - 有时应用领域会包含对每个对象都不相同的真实数据项，例如各种识别号码，这些数据项通常作为属性建模。
+
+### 链（link）
+
+- 对象之间的链
+  - 对象图上的对象之间的链表明这两个对象可以相互通信。
+    ![20220922205500](UML笔记.assets/20220922205500.png)
+- 链和关联
+  - 不能将任意两个对象链接在一起。
+  - 如果在两个对象之间创建链接，则类之间必须有相应的关联。
+  - 对象之间的链接对应于对象的类之间的关联： 应用于关联上的约束规则，链接必须遵守。
+
+```java
+public class CatalogueEntry {
+    private String name ;
+    private long number ;
+    private double cost ;
+    public CatalogueEntry(String nm, long num, double cst) {
+        name = nm ; number = num ; cost = cst ;
+    }
+    public String getName() { return name ; }
+    public long getNumber() { return number ; }
+    public double getCost() { return cost ; }
+}
+public class Part {
+    private CatalogueEntry entry ;
+    public Part(CatalogueEntry e) { entry = e ; }
+}
+//-----------------------------------------------
+CatalogueEntry screw = new CatalogueEntry("screw", 28834, 0.02) ;
+Part s1 = new Part(screw) ;
+Part s2 = new Part(screw) ;
+```
+
+- 链的UML表示法
+
+  - 对象保存另一对象的引用，在这两个对象之间画一个链来表示
+  - 链表示为从保存引用的对象指向被引用对象的箭头，箭头表示只能在一个方向上遍历或导航；
+  - 在箭头上可以标示保存引用的域的名字；
+
+  ![20220920130054](UML笔记.assets/20220920130054.png)
+
+### 消息传递
+
+- 面向对象程序中的数据是分布在系统的对象之中的
+  - 一些数据作为属性值保存
+  - 对象之间的链接也含有信息，描述对象之间保持的关系
+- 信息分布意味着为了完成系统的任何功能，一般而言都需要多个对象进行交互
+  - 假设想要为Part类增加一个方法cost来查询一个零件的成本；
+  - 表示零件成本的数据值并没有保存在零件对象中，而是保存在零件引用的目录条目对象中
+  - 新方法必须调用目录条目类中的getCost()方法
+
+```java
+public class Part {
+    public double cost() { return entry.getCost(); }
+    private CatalogueEntry entry ;
+}
+//如果客户持有一个Part的引用并要查询它的成本
+//可以如下调用cost方法。
+Part s1 = new Part(screw);
+double s1cost = s1.cost();
+```
+
+- UML将方法调用表示为从一个对象发送到另一对象的消息
+  - 当对象调用另一对象的方法时，可以看作是请求被调用的对象执行某些处理，这个请求作为消息建模。
+  - 上面的代码中调用s1.cost()的消息如图
+    ![20220920130438](UML笔记.assets/20220920130438.png)
+- 对象在接收到消息时，通常会以某种方式响应
+  ![20220920130518](UML笔记.assets/20220920130518.png)
+
+ **层次中的消息传递**
+
+![20220920131117](UML笔记.assets/20220920131117.png)
 
 
 
+## 总结
 
-
+![image-20230927235345800](UML笔记.assets/image-20230927235345800.png)
 
 # 用例图
 
