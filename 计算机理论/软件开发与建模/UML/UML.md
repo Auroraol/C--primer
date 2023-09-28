@@ -1697,8 +1697,8 @@ double s1cost = s1.cost();
 - 还会回到用例图吗？
   - 一旦需求有所改变，就要回来改进和精化用例，以保证正在开发的系统是用户需要的
 
-
 ## 小结
+
 ![20220924193839](image/UML/20220924193839.png)
 
 
@@ -2072,8 +2072,8 @@ double s1cost = s1.cost();
   - Interaction overview diagrams，交互概览图
   - 这些图帮助我们准确地对系统组成部分之间的交互建模
 
-
 ## 序列图（Sequence Diagrams）：Modeling Ordered Interactions
+
 - 序列图是交互图中最常用的一种
   - 序列图着重捕捉系统中各部分之间交互的顺序（order）
   - 使用序列图可以描述在一个特定用例执行时会激发哪些交互、这些交互以什么次序发生
@@ -2636,8 +2636,8 @@ double s1cost = s1.cost();
   - 状态机图详细描述一个对象状态和引起状态改变的触发器
 - 这两种图对于实时系统和嵌入式系统建模都很重要
 
-
 ## 交互概览图（Interaction Overview Diagrams）：Completing the Interaction Picture
+
 - Interaction Overview
   - 活动图的一种变体，将交互图片段与控制结构流结合在一起
 - 表示法
@@ -3075,6 +3075,7 @@ double s1cost = s1.cost();
 
 
 # U9 组合结构（Composite Structure）：对组合类的内部结构建模
+
 - Composite Structure
 - Internal Structure
 - Part and Connector
@@ -3533,6 +3534,7 @@ double s1cost = s1.cost();
 
 
 # U10 包（Package）图：组织系统模型
+
 - 包（Package）
 - Namespace和可见性
 - 关系
@@ -3635,8 +3637,8 @@ double s1cost = s1.cost();
 - 名字唯一
   ![20220928201150](image/UML/20220928201150.png)
 
-
 ## 元素可见性
+
 - 包中的元素可以具有public 或 private可见性
   ![20220928201225](image/UML/20220928201225.png)
 
@@ -3648,8 +3650,8 @@ double s1cost = s1.cost();
 - 理解包之间的依赖有助于分析系统的稳定性
   ![20220928201313](image/UML/20220928201313.png)
 
-
 ## Importing Packages
+
 - import关系（导入、引入）
   - 如果A imports B，那么包B中的元素可以在A中不用全名使用
     - public元素可用，private元素仍不可见
@@ -3677,8 +3679,8 @@ double s1cost = s1.cost();
 - A 可以看到C中的public元素，但不能看到D中的
   ![20220928201608](image/UML/20220928201608.png)
 
-
 ## 管理包的依赖关系
+
 - 复杂的依赖关系可能使软件系统不够稳定
   - 一个包的改变会影响所有依赖于它的包
   - 例如，下图中任一个包的修改都会影响到其他包
@@ -3857,8 +3859,8 @@ double s1cost = s1.cost();
 
   ![20220928202205](image/UML/20220928202205.png)
 
-
 ## 执行环境节点
+
 - 表示法
   - 构造型 `<<executionEnvironment>>` 强调节点是执行环境
   - 如图，一个应用服务器节点
