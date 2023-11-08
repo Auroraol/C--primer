@@ -421,7 +421,7 @@ public class Part {
 
 
 
-# 类图
+# 类图:crossed_swords:
 
 > 对系统的逻辑结构建模 
 
@@ -485,6 +485,7 @@ public class Part {
   - 如果类的任何部分被声明为抽象的，那么类本身也要声明为抽象的
 - 抽象类
   - 通过用斜体书写类名称来表示
+  - ![image-20231108130004372](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202311081300487.png)
 
 <img src="image/UML/20220920203605.png" alt="20220920203605" style="zoom:80%;" />
 
