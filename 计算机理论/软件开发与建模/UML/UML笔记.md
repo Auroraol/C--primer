@@ -3532,3 +3532,38 @@ Deployment Specifications
 ## 总结
 
 ![image-20230929002020107](UML笔记.assets/image-20230929002020107.png)
+
+
+
+# 生成时序图、类图、流程图、状态图以及用例图
+
+[PlantUML教程及主题模板](https://blog.csdn.net/u012107143/article/details/119361405)
+
+PlantUML可以使用[在线的版本](http://www.plantuml.com/plantuml/umla/SoWkIImgAStDuOhMYbNGrRLJUBgduLd7TYu81HPvjdRnqnqxdkpT_tpAYkTTsvurD2fOAJpRt_1iosvaPK_sJ7m-Pm5C0PIBhE1fs-xdkoV3542vN9YcWnM_REX_DcKzJ36KYqlnq-sRNau1sGDosEOLG3ONidxSldYwTiQpDVkua9rEqCi8Rn1MJ9epiClrht-oU-cB_RDVBEnvicl9incJeOOYh9g-uDdcgH11g5VGv91rGzsFJmLoS0ALFfixdukBoo4rBmMOJW00)，也可以使用编辑器VSCode安装插件
+
+<img src="UML%E7%AC%94%E8%AE%B0.assets/b0541a1ee4e7401095d2a343ab10544c.png" alt="b0541a1ee4e7401095d2a343ab10544c.png" style="zoom:50%;" />
+
+```bash
+@startuml
+
+
+
+@enduml
+```
+
+<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231124093537563.png" alt="image-20231124093537563" style="zoom:67%;" />
+
+至此本地环境就准备好了 ，接下来就是逐步讲解每个组件的使用了
+
+实现过程: 
+
+1)给ChatGPT提供要生成UML图的Java代码
+
+ 2)向ChatGPT描述需要生成的UML图类型
+
+ 3)让ChatGPT根据代码生成PlantUML代码； 4)将PlantUML代码复制到官网预览并输出图片
+
+
+
+
+
