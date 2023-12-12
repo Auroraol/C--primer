@@ -8,7 +8,7 @@
 
 所谓的Object指向，就是说要把复杂的问题细化分解，用图表的方式表达出来。比如下图：
 
-<img src="UML笔记.assets/2012081016165815.jpg" alt="img" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121358132.jpg" alt="img" style="zoom: 67%;" />
 
 如上图所示，一个好的模型能够正确的合理的表达复杂的意思。上图中复杂的路径信息经过简化之后就会变成清晰可见的模型图。
 
@@ -18,7 +18,7 @@
 
 但是每个人的思路都不一样，每个人画出来的图也都不一样，怎么样才能让大家都能听得懂对方的思路呢。
 
-<img src="UML笔记.assets/2012081016171480.jpg" alt="img" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121358185.jpg" alt="img" style="zoom:67%;" />
 
 在这个时候，UML登场了。UML是1997年由OMG组织推出来的，全球统一的模型图形技术。
 
@@ -32,11 +32,11 @@
 
 一切都是无序和混乱的，但是，有了UML就不会再出现这种问题了。所有的交流和文档都能够有一种大家都能听得懂的好方法传递，这就是UML。
 
-<img src="UML笔记.assets/2012081016173497.jpg" alt="img" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121358529.jpg" alt="img" style="zoom:67%;" />
 
 ##  4. UML的内容
 
-![20220919233848](UML笔记.assets/20220919233848-169582942899710.png)
+![20220919233848](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121358272.png)
 
 可以这样使用UML技术并且在很多自动开发工具之中，可以根据以上图形自动生成代码。
 
@@ -51,15 +51,15 @@
 
 对于现代软件开发和管理而言，UML是必需的知识，无论是外包还是内包，UML都是不可或缺的技术。
 
-![img](UML笔记.assets/759474-20160416210144082-1770418352.png)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121358182.png)
 
 # 类图：对系统的逻辑结构建模:crossed_swords:
 
 ##  注释(comment)
 
-<img src="UML笔记.assets/20200324193637705-16958253652863.png" alt="img" style="zoom:90%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121400570.png" alt="img" style="zoom:90%;" />
 
-<img src="image/UML/20220920201100.png" alt="20220920201100" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121400059.png" alt="20220920201100" style="zoom:67%;" />
 
 <img src="UML.assets/image-20230920235710476.png" alt="image-20230920235710476" style="zoom: 60%;" />
 
@@ -71,40 +71,40 @@
 
 - 接口图标表示
 
-  ![image-20231209140207393](UML%E7%AC%94%E8%AE%B0.assets/image-20231209140207393.png)
+  ![image-20231209140207393](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121420694.png)
 
 + 例子
 
-  <img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231209140941101.png" alt="image-20231209140941101" style="zoom:80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121420383.png" alt="image-20231209140941101" style="zoom:80%;" />
 
 ## 抽象类（abstract class）
 
 抽象类用斜体书写类名称来表示
 
-<img src="UML笔记.assets/20220920203605.png" alt="20220920203605" style="zoom: 70%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121420466.png" alt="20220920203605" style="zoom: 70%;" />
 
 ## 模板（template）
 
 **图标符号: **
 
-<img src="UML笔记.assets/20220920203823.png" alt="20220920203823" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421518.png" alt="20220920203823" style="zoom: 67%;" />
 
 **模板参数绑定: **
 
 - 显式模板参数绑定
   - `<<bind>>`依赖
-          <img src="UML笔记.assets/20220922205110.png" alt="20220922205110" style="zoom:80%;" />
+          <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421883.png" alt="20220922205110" style="zoom:80%;" />
 - 隐式模板参数绑定
   - 类名中加绑定表达式
-                                 <img src="UML笔记.assets/20220922205052.png" alt="20220922205052" style="zoom:80%;" />
+                                 <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421571.png" alt="20220922205052" style="zoom:80%;" />
 
 ## 类（class）
 
 ### 四种表示方式
 
-![image-20230912192721213](UML笔记.assets/image-20230912192721213.png)
+![image-20230912192721213](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421163.png)
 
-![img](UML笔记.assets/20200324194217558.png)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421106.png)
 
 注意:  
 
@@ -141,7 +141,7 @@ private:
 
 那么此类对应的UML为：
 
-![image-20230912192552933](UML笔记.assets/image-20230912192552933.png)
+![image-20230912192552933](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421900.png)
 
 看到该图分为三层：最顶层的为类名，中间层的为属性，最底层的为方法。
 属性的表示方式为：【可见性】【属性名称】：【类型】= {缺省值，可选}
@@ -152,16 +152,16 @@ private:
 
 - 可见性特征用于控制对属性、操作甚至整个类的访问，以有效地实施封装
 - UML 的四种不同的可见性分类
-  <img src="UML笔记.assets/20220920201220.png" alt="20220920201220" style="zoom:80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421416.png" alt="20220920201220" style="zoom:80%;" />
 
 ### 类的属性（attribute）
 
 属性的完整语法 `visibility name : type multiplicity = default {property-string}`
 
-​                          【可见性】【属性名称:类型】= {缺省值，可选}<img src="UML笔记.assets/20220920201410.png" alt="20220920201410" style="zoom:80%;" />
+​                          【可见性】【属性名称:类型】= {缺省值，可选}<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421038.png" alt="20220920201410" style="zoom:80%;" />
 
 内联属性和关联属性
-<img src="UML笔记.assets/20220920201635.png" alt="20220920201635" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421320.png" alt="20220920201635" style="zoom:80%;" />
 
 ### 类的方法（operation）
 
@@ -169,7 +169,7 @@ private:
 
 ​                                    【可见性】方法名称(【参数:类型】）：【返回类型】
 
-​      <img src="UML笔记.assets/20220920201738.png" alt="20220920201738" style="zoom:80%;" />
+​      <img src="UML%E7%AC%94%E8%AE%B0.assets/20220920201738.png" alt="20220920201738" style="zoom:80%;" />
 
 ### static属性和操作
 
@@ -177,7 +177,7 @@ UML中的操作和属性可以声明为static
 
 表示法：加下画线
 
-<img src="UML笔记.assets/image-20230927232307716.png" alt="image-20230927232307716" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421467.png" alt="image-20230927232307716" style="zoom: 80%;" />
 
 ### 关联的修饰
 
@@ -186,21 +186,21 @@ UML中的操作和属性可以声明为static
 - 关联名描述关联的性质
 - 读名字的方向，无歧义的情况下不需要
 
-<img src="UML笔记.assets/20220920202347.png" alt="20220920202347" style="zoom:85%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421492.png" alt="20220920202347" style="zoom:85%;" />
 
 #### 导航（navigation）
 
 - 给定一个 User对象，能够找到相应的Password对象；
 - 给定一个Password对象，不能找到对应的User
 
-<img src="UML笔记.assets/20220920202419.png" alt="20220920202419" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421071.png" alt="20220920202419" style="zoom:80%;" />
 
 #### 角色（role）
 
 - 参与关联的类在关联中扮演的角色
 - 角色可以命名，也叫做end name
 
-<img src="UML笔记.assets/20220920202434.png" alt="20220920202434" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422828.png" alt="20220920202434" style="zoom:80%;" />
 
 #### 重数（multiplicity）
 
@@ -223,18 +223,18 @@ UML中的操作和属性可以声明为static
 
 例如：
 
-![image-20231209134032168](UML%E7%AC%94%E8%AE%B0.assets/image-20231209134032168.png)
+![image-20231209134032168](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422664.png)
 
 例如：汽车和司机，一辆车对应一个特定的司机，一个司机可以开多辆汽车。
 
-![Class Diagram template: Class Diagram Association Example (Created by Visual Paradigm Online's Class Diagram maker)](UML笔记.assets/class-diagram-association-example.png)
+![Class Diagram template: Class Diagram Association Example (Created by Visual Paradigm Online's Class Diagram maker)](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422796.png)
 
 #### 可见性（visibility）
 
 - 给定一个User对象，可以访问Password
 - 给定一个 UserGroup 对象，可以导航到它的 User 对象，反之亦然；但无法从这个链查看 User 对象的 Password 对象； 因为它们是User私有的。
 
-<img src="UML笔记.assets/20220920202640.png" alt="20220920202640" style="zoom:84%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422760.png" alt="20220920202640" style="zoom:84%;" />
 
 #### 聚合（aggregation）
 
@@ -242,28 +242,28 @@ UML中的操作和属性可以声明为static
 - 这种关系称为聚合，代表一种“has-a”关系，意思是整体的对象有部分的对象。
 - 聚合实际上只是一种特殊的关联
 
-<img src="UML笔记.assets/20220920202709.png" alt="20220920202709" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422800.png" alt="20220920202709" style="zoom:80%;" />
 
 #### 组合（composition）
 
 - 简单聚合是概念性的，只是区分“整体”和“部分”，不会改变整体和部分之间关联的导航含义，也不会链接整体和部分的生命周期。
 - 组合是一种更强的聚合形式，一个部分对象只能属于一个整体复合对象；在复合对象中，整体对象必须管理其部分的创建和销毁
 
-<img src="UML笔记.assets/20220920202741.png" alt="20220920202741" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422490.png" alt="20220920202741" style="zoom:80%;" />
 
 #### 限定（qualification）
 
 - 限定符（qualifier）
 
-![image-20231117204102780](UML%E7%AC%94%E8%AE%B0.assets/image-20231117204102780.png)
+![image-20231117204102780](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422301.png)
 
 #### 约束（constraint）
 
 约束用来表示各种限制，如关联路径上的限制，和属性特征检测（存在、所有、或者）
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/v2-8081f487efb254a35d69fdfa9547c6f6_720w.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422617.webp)
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231117204545646.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422358.png" style="zoom:80%;" />
 
 #### 关联类（Association Class）
 
@@ -271,11 +271,11 @@ UML中的操作和属性可以声明为static
 
 - 在两个类之间的关联中，关联本身可能具有属性
 
-<img src="UML笔记.assets/20220920202930.png" alt="20220920202930" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422865.png" alt="20220920202930" style="zoom: 50%;" />
 
 关联类同时具有关联和类的特性          
 
-<img src="UML笔记.assets/20220920203009.png" alt="20220920203009" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422636.png" alt="20220920203009" style="zoom: 50%;" />
 
 ### 类图中的关系（relationship）
 
@@ -284,14 +284,14 @@ UML中的操作和属性可以声明为static
 - 依赖（dependency）
 - 实现（realization）
 
-<img src="UML笔记.assets/20220920202014.png" alt="20220920202014" style="zoom: 55%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121422520.png" alt="20220920202014" style="zoom: 55%;" />
 
 #### UML 的5种不同的类关系
 
 - 类关系的强度取决于关系涉及的类彼此之间的依赖程度
 - 两个相互强烈依赖的类被认为是紧密耦合的； 对一个类的更改很可能会影响另一个类
 
-![20220920202047](UML笔记.assets/20220920202047.png)
+![20220920202047](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121423870.png)
 
 #### 依赖关系
 
@@ -332,7 +332,7 @@ public:
 
 其UML的画法为：
 
-![image-20230912205051306](UML笔记.assets/image-20230912205051306.png)
+![image-20230912205051306](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424990.png)
 
 比如，选课管理系统中抽取的类：从 CourseSchedule (课程计划)到 Course (课程)的依赖关系，其中 Course 用于 CourseSchedule 的添加和删除操作。
 
@@ -361,11 +361,11 @@ public:
 ```
 
 其UML的画法为：
-                                                <img src="UML笔记.assets/20220920202131.png" alt="20220920202131" style="zoom:67%;" />   
+                                                <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424007.png" alt="20220920202131" style="zoom:67%;" />   
 
 比如，人与手机的关系图，人通过手机的语音传送方法打电话。其UML的画法为：
 
-<img src="UML笔记.assets/image-20230927225023886.png" alt="image-20230927225023886" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424534.png" alt="image-20230927225023886" style="zoom:67%;" />
 
 #### 关联关系
 
@@ -380,7 +380,7 @@ public:
 
 关联的类型:  自关联，二元关联，n元关联（一对一（员工->工牌），一对多（部门->员工），多对多（商店->商品）比如:
 
-<img src="UML笔记.assets/image-20230912224711314.png" alt="image-20230912224711314" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424061.png" alt="image-20230912224711314" style="zoom: 50%;" />
 
 ##### 单向关联关系
 
@@ -404,7 +404,7 @@ private:
 
 其UML的画法为：
 
-![image-20230912202939426](UML笔记.assets/image-20230912202939426.png)
+![image-20230912202939426](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424426.png)
 
 ##### 双向关联关系
 
@@ -431,11 +431,11 @@ private:
 
 其UML的画法为：(注:  双向关联用一个不带箭头的线来表示)
 
-![image-20230912203050156](UML笔记.assets/image-20230912203050156.png)
+![image-20230912203050156](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424813.png)
 
 比如老师和学生的关系图，每个老师可以教多个学生，每个学生也可向多个老师学，他们是双向关联。UML的画法为：
 
-<img src="UML笔记.assets/image-20230927225127096.png" alt="image-20230927225127096" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424771.png" alt="image-20230927225127096" style="zoom: 67%;" />
 
 #####  自关联关系
 
@@ -454,7 +454,7 @@ private:
 
 其UML的画法为：
 
-![image-20230912203149691](UML笔记.assets/image-20230912203149691.png)
+![image-20230912203149691](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424728.png)
 
 #### 聚合关系
 
@@ -466,11 +466,11 @@ private:
 
 比如，大学和教师的关系图UML的画法为：
 
-<img src="UML笔记.assets/image-20230927231025701.png" alt="image-20230927231025701" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424240.png" alt="image-20230927231025701" style="zoom:67%;" />
 
 例如，公交车司机和工作服和帽子是整体关系的一部分，但它们可以分开。工作服和帽子可以穿在其他司机身上。公交车司机也可以穿其他工作服和帽子。
 
-![Class Diagram template: Class Diagram Aggregation Example (Created by Visual Paradigm Online's Class Diagram maker)](UML笔记.assets/class-diagram-aggregation-example.png)
+![Class Diagram template: Class Diagram Aggregation Example (Created by Visual Paradigm Online's Class Diagram maker)](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424912.png)
 
 比如，汽车（Car）与引擎（Engine）、轮胎（Wheel）、车灯（Light），注意这个例子其实并不准确，它更想是组合关系, C++ 表示为：
 
@@ -514,7 +514,7 @@ private:
 
 其UML的画法为：
 
-<img src="UML笔记.assets/image-20230912204101823.png" alt="image-20230912204101823" style="zoom:90%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424189.png" alt="image-20230912204101823" style="zoom:90%;" />
 
 代码实现聚合关系，成员对象通常以构造方法、Setter方法的方式注入到整体对象之中。
 
@@ -559,7 +559,7 @@ private:
 
 其UML的画法为：
 
-![image-20230912204652234](UML笔记.assets/image-20230912204652234.png)
+![image-20230912204652234](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424331.png)
 
 代码实现组合关系，通常在整体类的构造方法中直接实例化成员类，因为组合关系的整体和部分是共生关
 系，如果通过外部注入，那么即使整体不存在，那么部分还是存在的，这就相当于变成了一种聚合关系了。
@@ -573,9 +573,9 @@ private:
 - 实现接口的类和接口之间的关系
 - 实现关系的表示法
   - 构造型：空心三角箭头+虚线
-    <img src="UML笔记.assets/20220920203746.png" alt="20220920203746" style="zoom: 64%;" />
+    <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424122.png" alt="20220920203746" style="zoom: 64%;" />
   - 图标表示：实线
-    <img src="UML笔记.assets/20220920203758.png" alt="20220920203758" style="zoom:70%;" />
+    <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424133.png" alt="20220920203758" style="zoom:70%;" />
 
 #### 继承关系
 
@@ -618,11 +618,11 @@ private:
 
 其UML的画法为：
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211193709434.png" alt="image-20231211193709434" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121424695.png" alt="image-20231211193709434" style="zoom: 80%;" />
 
 比如,  公共汽车、出租车、汽车都是汽车，它们都有名字，都可以在路上。
 
-![Class Diagram template: Class Diagram Inheritance Example (Created by Visual Paradigm Online's Class Diagram maker)](UML笔记.assets/class-diagram-inheritance-example.png)
+![Class Diagram template: Class Diagram Inheritance Example (Created by Visual Paradigm Online's Class Diagram maker)](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425023.png)
 
 ##### 抽象继承关系
 
@@ -662,7 +662,7 @@ public:
 
 其UML的画法为：
 
-<img src="UML笔记.assets/image-20230912202632333.png" alt="image-20230912202632333" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425441.png" alt="image-20230912202632333" style="zoom: 67%;" />
 
 在UML中，抽象类无论类名还是抽象方法名，都以斜体的方式表示，因为这也是一种继承关系，所以子类与
 父类通过带空心三角形的实线来联系。
@@ -699,11 +699,11 @@ public:
 
 #### 类图也可能附有类或关系的注释
 
-![類圖模板：類圖 GUI 示例（由 Visual Paradigm Online 的類圖製作者創建）](UML笔记.assets/class-diagram-gui-example.png)
+![類圖模板：類圖 GUI 示例（由 Visual Paradigm Online 的類圖製作者創建）](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425272.png)
 
 #### 具有用户定义约束的类图
 
-![類圖模板：類圖 - 類和包約束（由 Visual Paradigm Online 的類圖製作者創建）](UML笔记.assets/class-diagram-classes-and-packages-constraints.png)
+![類圖模板：類圖 - 類和包約束（由 Visual Paradigm Online 的類圖製作者創建）](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425055.png)
 
 ### 示例
 
@@ -711,31 +711,31 @@ public:
 李小平是一个爱书之人，家里各类书籍已过千册，而平时又时常有朋友外借，因此需要一个个人图书管理系统。该系统应该能够将书籍的基本信息按计算机类、非计算机类分别建档，实现按书名、作者、类别、出版社等关键字的组合查询功能。在使用该系统录入新书籍时系统会自动按规则生成书号，可以修改信息，但一经创建就不允许删除。该系统还应该能够对书籍的外借情况进行记录，可对外借情况列表打印。另外，还希望能够对书籍的购买金额、册数按特定时限、周期进行统计。
 ```
 
-![image-20231209150450422](UML%E7%AC%94%E8%AE%B0.assets/image-20231209150450422.png)
+![image-20231209150450422](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425975.png)
 
 ```
 汽车和自行车都是交通工具(vehicle)。 一辆自行车(bicycle)只归一个人(person)所有， 但一辆汽车(auto)可归一个人或两个人所有。 一个人可能没有自行车或汽车， 也可能有多辆自行车或汽车。 人分为男人(male)和女人(female)。 每个人都有年龄(age)和名字(name)。 每辆交通工具都有自己的颜色(color)和商标(brand)。 每辆汽车都只有两个前灯(headlight)和一台发动机(motor)。
 ```
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/1429856-20180706154515333-718295896.png)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425981.png)
 
 
 
 ### 示例
 
-![image-20231211214928891](UML%E7%AC%94%E8%AE%B0.assets/image-20231211214928891.png)
+![image-20231211214928891](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425149.png)
 
 ### 示例
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211194951390.png" alt="image-20231211194951390" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425646.png" alt="image-20231211194951390" style="zoom: 67%;" />
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211195149042.png" alt="image-20231211195149042" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425558.png" alt="image-20231211195149042" style="zoom: 67%;" />
 
 ### 示例
 
 下面的类图对来自零售目录的客户订单进行建模。中心类是**Order**。与之相关的是进行购买和**付款的**客户**。**付款**是以下四种之一：现金**、**支票**、**信用卡**或电汇**。订单包含**OrderDetails**（行项目），每个项目都有关联的**Item
 
-![類圖模板：UML 類圖示例：銷售訂單系統（由 Visual Paradigm Online 的類圖製作者創建）](UML笔记.assets/uml-class-diagram-example-sales-order-system.png)
+![類圖模板：UML 類圖示例：銷售訂單系統（由 Visual Paradigm Online 的類圖製作者創建）](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425739.png)
 
 # 对象图
 
@@ -743,7 +743,7 @@ public:
 
 对于复杂的数据结构，有时候很难对其进行抽象成类表达之间的关系，一般就会使用对象图。
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/v2-75055f4796ac722ae6f73d8729278f4e_r.jpg)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121425772.jpg)
 
 ## 对象图的组成元素
 
@@ -758,29 +758,29 @@ Part myScrew = new Part("screw", 28834, 0.02) ;
 ```
 
 Part对象的UML表示
-                                                         <img src="UML笔记.assets/20220920125336.png" alt="20220920125336" style="zoom: 67%;" />
+                                                         <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426813.png" alt="20220920125336" style="zoom: 67%;" />
 
 - 对象是类的实例
 
-  <img src="UML笔记.assets/20220922205310.png" alt="20220922205310" style="zoom: 67%;" />       
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426262.png" alt="20220922205310" style="zoom: 67%;" />       
 
 - UML中实例的图形表示
 
   - 命名实例
 
-     <img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211200423104.png" alt="image-20231211200423104" style="zoom: 80%;" />
+     <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426749.png" alt="image-20231211200423104" style="zoom: 80%;" />
 
   - 匿名实例
 
-    <img src="UML笔记.assets/20220922205403.png" alt="20220922205403" style="zoom: 67%;" />    
+    <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426901.png" alt="20220922205403" style="zoom: 67%;" />    
 
 #### 对象状态
 
 带属性值的实例
-                            <img src="UML笔记.assets/20220922205439.png" alt="20220922205439" style="zoom:80%;" />
+                            <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426731.png" alt="20220922205439" style="zoom:80%;" />
 
 带显式状态的实例
-                           <img src="UML笔记.assets/20220922205448.png" alt="20220922205448"  />
+                           <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426681.png" alt="20220922205448"  />
 
 #### 对象的特性
 
@@ -818,7 +818,7 @@ Part对象的UML表示
 
 - 对象之间的链
   - 对象图上的对象之间的链表明这两个对象可以相互通信。
-    <img src="UML笔记.assets/20220922205500.png" alt="20220922205500" style="zoom:80%;" />
+    <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426557.png" alt="20220922205500" style="zoom:80%;" />
 - 链和关联
   - 不能将任意两个对象链接在一起。
   - 如果在两个对象之间创建链接，则类之间必须有相应的关联。
@@ -854,7 +854,7 @@ Part s2 = new Part(screw) ;
 - 链表示为从保存引用的对象指向被引用对象的箭头，箭头表示只能在一个方向上遍历或导航；
 - 在箭头上可以标示保存引用的域的名字；
 
-<img src="UML笔记.assets/20220920130054.png" alt="20220920130054" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426204.png" alt="20220920130054" style="zoom:80%;" />
 
 ### 消息传递(函数调用)
 
@@ -884,24 +884,24 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 - 当对象调用另一对象的方法时，可以看作是请求被调用的对象执行某些处理，这个请求作为消息建模。
 - 上面的代码中调用s1.cost()的消息如图
-  <img src="UML笔记.assets/20220920130438.png" alt="20220920130438" style="zoom:90%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426531.png" alt="20220920130438" style="zoom:90%;" />
 
 对象在接收到消息时，通常会以某种方式响应
-       <img src="UML笔记.assets/20220920130518.png" alt="20220920130518"  />   
+       <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426856.png" alt="20220920130518"  />   
 
  例子:  **层次中的消息传递**
 
-![20220920131117](UML笔记.assets/20220920131117.png)
+![20220920131117](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426567.png)
 
 ## 例子
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211195707230.png" alt="image-20231211195707230" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426277.png" alt="image-20231211195707230" style="zoom: 67%;" />
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211195953289.png" alt="image-20231211195953289" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426566.png" alt="image-20231211195953289" style="zoom:67%;" />
 
 ## 总结
 
-![image-20230927235345800](UML笔记.assets/image-20230927235345800.png)
+![image-20230927235345800](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426902.png)
 
 # 用例图：对系统需求建模:crossed_swords:
 
@@ -918,7 +918,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 - Subject（主题、主体）
   - 正在被开发的系统，用例应用于该系统
 
-<img src="UML笔记.assets/20220923222855.png" alt="20220923222855" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426728.png" alt="20220923222855" style="zoom: 80%;" />
 
 用例图所包含的元素如下：
 
@@ -930,7 +930,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 参与者的UML表示法
 
-<img src="UML笔记.assets/20220923223040.png" alt="20220923223040" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426245.png" alt="20220923223040" style="zoom: 50%;" />
 
 注意:  参与者可以是人也可以是物,  如顾客、管理员、自动贩卖机、打印机这些都可以是参与者
 
@@ -938,7 +938,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 参与者相互之间可能有泛化关系
 
-<img src="UML笔记.assets/20220923223244.png" alt="20220923223244" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426404.png" alt="20220923223244" style="zoom: 67%;" />
 
 ## 2. 用例(Use Case)
 
@@ -949,7 +949,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 - 椭圆
 - 构造型
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211201628436.png" alt="image-20231211201628436" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426449.png" alt="image-20231211201628436" style="zoom:67%;" />
 
 ## 3. 子系统(Subsystem)
 
@@ -959,13 +959,13 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 - 用例在方框中，参与者在方框外
 
-  <img src="UML笔记.assets/2012013015215321.gif" alt="img" style="zoom:80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121426882.gif" alt="img" style="zoom:80%;" />
 
 ## 4.  关系
 
 用例图中涉及的关系有：关联、泛化、包含、扩展。
 
-![image-20231211202618125](UML%E7%AC%94%E8%AE%B0.assets/image-20231211202618125.png)
+![image-20231211202618125](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121427355.png)
 
 总结:   前包含/都需要包含,  后继承/同一类继承,  if扩展
 
@@ -975,7 +975,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 【箭头指向】：指向消息接收方, 箭头可以省略
 
-![img](UML笔记.assets/2012013015250613.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121427928.gif)
 
 ### b. 泛化(Inheritance)
 
@@ -983,7 +983,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 【箭头指向】：指向父用例
 
-![img](UML笔记.assets/2012013015260081.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121427090.gif)
 
 ### c. 包含(Include)
 
@@ -991,7 +991,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 【箭头指向】：基用例指向子用例/都需要的
 
-![image-20231211202217483](UML%E7%AC%94%E8%AE%B0.assets/image-20231211202217483.png)
+![image-20231211202217483](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121427489.png)
 
 ### d. 扩展(Extend)
 
@@ -999,7 +999,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 【箭头指向】：指向基础用例/if
 
-![image-20231211202250198](UML%E7%AC%94%E8%AE%B0.assets/image-20231211202250198.png)
+![image-20231211202250198](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121427854.png)
 
 ### e. 依赖(Dependency)
 
@@ -1007,8 +1007,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 【箭头指向】：指向被依赖项(可以去掉箭头)
 
-​                                                               ![img](UML笔记.assets/2012013015290255.gif)
-
+​                                          <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121429137.png" alt="image-20231212142943223" style="zoom: 80%;" />
 
 ## 5. 项目(Artifact)
 
@@ -1016,7 +1015,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 用依赖关系把某个用例依赖到项目上：
 
-![img](UML笔记.assets/2012013015295762.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121428007.gif)
 
 然后把项目-》属性 的Hyperlink设置到你的文档上；
 
@@ -1024,7 +1023,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 
 ## 6. 注释(Comment)
 
-![img](UML笔记.assets/2012013015305290.gif) 
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121427892.gif) 
 
 　　
 
@@ -1035,13 +1034,13 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
   + 对extend而言，延伸用例并不包含基础用例的内容，基础用例也不包含延伸用例的内容
   + 对Inheritance而言，子用例包含基础用例的所有内容及其和其他用例或参与者之间的关系
 
-**一个用例图示例：**                                                                                            <img src="UML笔记.assets/2012013015315117.gif" alt="img" style="zoom:120%;" /> 
+**一个用例图示例：**                                                                                            <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121430328.gif" alt="img" style="zoom:120%;" /> 
 
 **用例描述表：**
 
 鉴于用列图并不能清楚地表达功能需求，开发中大家通常用描述表来补充某些不易表达的用例
 
-![img](UML笔记.assets/2012013015331348.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121430764.gif)
 
 ## 7. 用例描述
 
@@ -1056,9 +1055,9 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 | **(代替流)异常事件流**： <br/>  1．提示错误信息，负责人确认 <br/>  2．返回到管理系统主页面 |
 | 注释：无                                                     |
 
-![image-20231209202556690](UML%E7%AC%94%E8%AE%B0.assets/image-20231209202556690.png)
+![image-20231209202556690](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121430798.png)
 
-![image-20231211204206939](UML%E7%AC%94%E8%AE%B0.assets/image-20231211204206939.png)
+![image-20231211204206939](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121430920.png)
 
 ## 8. 例子
 
@@ -1068,7 +1067,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 + 如果用例A和用例B相似，但A的动作序列是通过改写B的部分或者扩展B的动作获得的，则用例A和B是什么关系?
 + 如果用例A和用例B相似，但A的功能比B的多，A的动作序列是3通过在B的动作序列中的某些执行点上插入附加的动作序列松成的，则用例A和B是什么关系?
 
-<img src="UML笔记.assets/image-20231010101114471.png" alt="image-20231010101114471" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121430400.png" alt="image-20231010101114471" style="zoom:67%;" />
 
 ### 示例
 
@@ -1079,7 +1078,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 参与者：管理员与系院领导。
 ```
 
-![学院班级管理系统用例图](UML%E7%AC%94%E8%AE%B0.assets/20170727022208048.jpeg)
+![学院班级管理系统用例图](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121430366.jpeg)
 
 2. **试画出学生成绩管理的用例图**
 
@@ -1088,7 +1087,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 参与者：教师和学生。
 ```
 
-![学生成绩管理用例图](UML%E7%AC%94%E8%AE%B0.assets/20170727022253111.jpeg)
+![学生成绩管理用例图](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121430948.jpeg)
 
 3. **试画出网上选课系统的用例图**
 
@@ -1097,7 +1096,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 参与者：系统管理员与学生。
 ```
 
-![网上选课系统用例图](UML%E7%AC%94%E8%AE%B0.assets/20170727022326627.jpeg)
+![网上选课系统用例图](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121430219.jpeg)
 
 4. **试画出账号管理的用例图**
 
@@ -1106,7 +1105,7 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 参与者：系统管理员。
 ```
 
-![账号管理用例图](UML%E7%AC%94%E8%AE%B0.assets/20170727022354887.jpeg)
+![账号管理用例图](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121430736.jpeg)
 
 5. **试画出自动饮料售货机的用例图**
 
@@ -1114,59 +1113,55 @@ UML将方法调用表示为从一个对象发送到另一对象的消息
 一台自动饮料售货机共有6中饮料，售货机上有6个按钮，分别对应6种饮料，顾客可以通过按钮来选择所要购买的饮料。每个按钮旁有一个指示灯，用来表示该售货机中是否还有这种饮料可售，售货机有一个硬币槽，用来收钱和找钱，假设一位顾客购买矿泉水，不用找零钱，请给出描述上述场景的用例图。
 ```
 
-![饮料售货机顾客自动购买矿泉水用例图](UML%E7%AC%94%E8%AE%B0.assets/20170727022424628.jpeg)
+![饮料售货机顾客自动购买矿泉水用例图](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121430808.jpeg)
 
 下面附上几张图，帮助理解一下
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/241547203438021.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431062.gif)
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/241547571097721.gif)
-
-![img](UML%E7%AC%94%E8%AE%B0.assets/241548149375908.gif)
-
-![img](UML%E7%AC%94%E8%AE%B0.assets/241548282506342.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431336.gif)
 
 ### 示例
 
-![image-20231211203147355](UML%E7%AC%94%E8%AE%B0.assets/image-20231211203147355.png)
+![image-20231211203147355](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431526.png)
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231209202400855.png" alt="image-20231209202400855" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431448.png" alt="image-20231209202400855" style="zoom: 67%;" />
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211203225635.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431354.png" style="zoom:67%;" />
 
 ### 示例
 
 广播系统用例图
 
-![用例图模板：广播系统用例图（由 Visual Paradigm Online 的用例图制作者创建）](UML笔记.assets/broadcasting-system-use-case-diagram.png)
+![用例图模板：广播系统用例图（由 Visual Paradigm Online 的用例图制作者创建）](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431447.png)
 
 ATM 用例图示例
 
-![用例图模板：ATM 用例图示例（由 Visual Paradigm Online 的用例图制作者创建）](UML笔记.assets/atm-use-case-diagram-example.png)
+![用例图模板：ATM 用例图示例（由 Visual Paradigm Online 的用例图制作者创建）](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431836.png)
 
 用例图：具有系统边界的多个项目
 
-![用例图模板：用例图：具有系统边界的多个项目（由 Visual Paradigm Online 的用例图制作者创建）](UML笔记.assets/use-case-diagram-multiple-projects-with-system-boundaries.png)
+![用例图模板：用例图：具有系统边界的多个项目（由 Visual Paradigm Online 的用例图制作者创建）](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431590.png)
 
 用例图：在线考试系统
 
-![用例图模板：用例图：在线考试系统（由 Visual Paradigm Online 的用例图制作者创建）](UML笔记.assets/use-case-diagram-online-examination-system.png)
+![用例图模板：用例图：在线考试系统（由 Visual Paradigm Online 的用例图制作者创建）](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431186.png)
 
 用例图示例：乘客服务
 
-![用例图模板：用例图示例：乘客服务（由 Visual Paradigm Online 的用例图制作者创建）](UML笔记.assets/use-case-diagram-example-passenger-service.png)
+![用例图模板：用例图示例：乘客服务（由 Visual Paradigm Online 的用例图制作者创建）](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431512.png)
 
 用例图示例：软件开发
 
-![用例图模板：用例图示例：软件开发（由 Visual Paradigm Online 的用例图制作者创建）](UML笔记.assets/use-case-diagram-example-software-development.png)
+![用例图模板：用例图示例：软件开发（由 Visual Paradigm Online 的用例图制作者创建）](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121431438.png)
 
 用例图示例：停车场系统
 
-![用例图模板：用例图示例：停车场系统（由 Visual Paradigm Online 的用例图制作者创建）](UML笔记.assets/use-case-diagram-example-carpark-system.png)
+![用例图模板：用例图示例：停车场系统（由 Visual Paradigm Online 的用例图制作者创建）](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432413.png)
 
 ## 总结
 
-![20220924193839](UML笔记.assets/20220924193839.png)
+![20220924193839](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432543.png)
 
 # 活动图：对系统工作流建模:crossed_swords:
 
@@ -1175,7 +1170,7 @@ ATM 用例图示例
 - 分支和并发
 - 活动图建模
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211204550486.png" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432962.png" style="zoom: 50%;" />
 
 ## 活动图的组成
 
@@ -1208,7 +1203,7 @@ ATM 用例图示例
 
 **表示：平滑的圆角矩形**
 
-<img src="UML笔记.assets/2502367-20220930092313416-209262673.png" alt="image" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432104.png" alt="image" style="zoom: 50%;" />
 
 注意: 
 
@@ -1247,13 +1242,13 @@ ATM 用例图示例
 
 **因此动作结点是一种特殊的活动结点：** 动作结点一般用于描述简短的操作，而活动结点用于描述持续事件或复杂计算。
 
-<img src="UML笔记.assets/image-20230930233539310.png" alt="image-20230930233539310" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432668.png" alt="image-20230930233539310" style="zoom:67%;" />
 
 ## 控制结点
 
 ### 初始结点和终止结点
 
-<img src="UML笔记.assets/image-20230930233820282.png" alt="image-20230930233820282" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432025.png" alt="image-20230930233820282" style="zoom:80%;" />
 
 **初始结点：**
 标记活动图的开始，表示业务处理过程的开始；
@@ -1274,7 +1269,7 @@ ATM 用例图示例
   - 注意条件的互斥、完备
   - 可以在一条边上标记`[else]`以保证完备
 - 用空心的菱形表示:
-                                         <img src="UML笔记.assets/2502367-20221004195512239-968072516.png" alt="image" style="zoom:67%;" />
+                                         <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432098.png" alt="image" style="zoom:67%;" />
 
 合并（merge）
 
@@ -1283,13 +1278,13 @@ ATM 用例图示例
 - `监护条件要有中括号[]`
 - 在所有输出控制流中，其监护条件应**互斥**，且应**覆盖所有可能**。
 
-<img src="UML笔记.assets/image-20230930234012952.png" alt="image-20230930234012952" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432859.png" alt="image-20230930234012952" style="zoom:67%;" />
 
 ### 分叉与汇合
 
 >对**并发**运行的控制流建模
 
-![image](UML笔记.assets/2502367-20221004200340524-2084200083.png)
+![image](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432458.png)
 **注意：分叉与汇合不是必须有监护条件**
 
 **分叉**
@@ -1303,7 +1298,7 @@ ATM 用例图示例
 
 一个汇合可以有两个或多个进入控制流和一个输出控制流。
 
-<img src="UML笔记.assets/image-20230930234243475.png" alt="image-20230930234243475" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432928.png" alt="image-20230930234243475" style="zoom:80%;" />
 
 ### 总结
 
@@ -1351,17 +1346,17 @@ ATM 用例图示例
 
 活动图中的对象节点除了对象名称， 还可以带有**状态**。
 **表示：**
-![image](UML笔记.assets/2502367-20220930093234020-1005957283.png)
+![image](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432546.png)
 
 ![image](UML笔记.assets/2502367-20220930093249967-1766014612.png)
 
-![image-20231002103517241](UML笔记.assets/image-20231002103517241.png)
+![image-20231002103517241](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432553.png)
 
 ### 对象在动作之间传递
 
 - 完整的活动图
 
-![20220925103506](UML笔记.assets/20220925103506.png)
+![20220925103506](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432688.png)
 
 ### 动作的输入和输出
 
@@ -1371,7 +1366,7 @@ Pins（别针，大头针）说明一个对象是动作的输入或输出
 - output pin：指定的对象是动作的输出
 
 Pin强调一个对象是动作需要的输入或输出，而对象结点则强调活动中的数据流
-![20220925103559](UML笔记.assets/20220925103559.png)
+![20220925103559](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432912.png)
 
 ### Transformation
 
@@ -1379,7 +1374,7 @@ Pin强调一个对象是动作需要的输入或输出，而对象结点则强�
   - 如果一个动作只需要某个对象的一部分，而不是整个对象，可以使用 transformation 来表示所需要的部分
   - 可以用来表示一个动作输出为另一个动作提供输入
 
-![20220925111250](UML笔记.assets/20220925111250.png)
+![20220925111250](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432248.png)
 
 ### 对象状态
 
@@ -1387,7 +1382,7 @@ Pin强调一个对象是动作需要的输入或输出，而对象结点则强�
 
 - 状态用`[状态]`表示
 - 例如，下图的焦点是Order对象在整个过程中的状态变化
-  ![20220925111308](UML笔记.assets/20220925111308.png)
+  ![20220925111308](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432855.png)
 
 
 
@@ -1411,7 +1406,7 @@ Pin强调一个对象是动作需要的输入或输出，而对象结点则强�
 
 **表示：** <font color='red'>用一条带箭头的实线段表示。要么连接结束结点要么连接其他活动</font>
 
-<img src="UML笔记.assets/2502367-20221004200957135-807183220.png" alt="image" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121432979.png" alt="image" style="zoom: 80%;" />
 
 ### 对象流
 
@@ -1420,7 +1415,7 @@ Pin强调一个对象是动作需要的输入或输出，而对象结点则强�
 
 **表示：**
 UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线段表示。
-![image](UML笔记.assets/2502367-20221004201254232-1891701760.png)
+![image](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433890.png)
 
 ### 活动输入和输出
 
@@ -1431,7 +1426,7 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
   - 这种表示法强调一个活动需要输入并提供输出
     - 这时可以省略活动的起始结点和结束结点
 
-  ![20220925111358](UML笔记.assets/20220925111358.png)
+  ![20220925111358](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433741.png)
 
 ### 发送和接收信号
 
@@ -1457,7 +1452,7 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
   - 当外部的人或系统收到这个消息时，他/它可能做某些事情进行响应，但是这不在本活动图中建模
 
 - 发送信号结点和接收信号结点表示与外部参与者（participants）的交互
-  ![20220925111539](UML笔记.assets/20220925111539.png)
+  ![20220925111539](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433807.png)
 
 - 接收信号结点
 
@@ -1465,7 +1460,7 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
   - 没有进入边：该节点在所处的活动激活时总是等待一个信号的到达
     - 可以作为一个活动的开始节点，如下图：每当接收到一个信号时活动就起动
 
-  ![20220925111609](UML笔记.assets/20220925111609.png)
+  ![20220925111609](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433005.png)
 
 ### 活动的开始和结束
 
@@ -1476,7 +1471,7 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
 - 响应时间事件
 - 由信号激起
 
-![20220925111657](UML笔记.assets/20220925111657.png)
+![20220925111657](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433376.png)
 
 活动的结束和流程的结束:
 
@@ -1484,7 +1479,7 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
 - Activity final node
 - Flow final node
 
-![20220925111710](UML笔记.assets/20220925111710.png)
+![20220925111710](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433477.png)
 
 #### 活动结束
 
@@ -1492,20 +1487,20 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
 
   - 例如，下图中只有一条到活动终止节点的路径，活动中的每个动作都可以完成
 
-  ![20220925111859](UML笔记.assets/20220925111859.png)
+  ![20220925111859](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433709.png)
 
 - 一个活动图中也可以有多个活动终止结点
 
   - 当流程到达活动终止结点时，活动中的所有其他动作都终止，包括终止结点之前的动作
   - 不清晰
 
-  ![20220925111918](UML笔记.assets/20220925111918.png)
+  ![20220925111918](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433231.png)
 
 - 在fork节点后使用活动结束时要注意
 
   - 如果希望所有分叉的动作都可以执行完成，要加join节点
 
-  ![20220925111936](UML笔记.assets/20220925111936.png)
+  ![20220925111936](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433841.png)
 
 #### 结束流程（flow）
 
@@ -1515,11 +1510,11 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
   - 例如，右图中，当2秒时限到时，返回搜索结果，整个活动结束，包括 Improve Search Results 动作
   - 如果2秒之内 Improve Search Results 结束了，它不会终止整个活动
 
-  ![20220925112027](UML笔记.assets/20220925112027.png)
+  ![20220925112027](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433358.png)
 
 #### 活动结束vs.流程结束
 
-![20220925112112](UML笔记.assets/20220925112112.png)
+![20220925112112](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433339.png)
 
 ## 中断活动
 
@@ -1537,7 +1532,7 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
   - 如果是在Process Order 动作激活时接收到取消信号，那么 Process Order 会被中断，控制转到 Cancel Order 动作
   - 如果是在 Ship Order 激活时收到取消信号，Ship Order 不会被中断，因为它不在该区域
 
-  ![20220925112150](UML笔记.assets/20220925112150.png)
+  ![20220925112150](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433819.png)
 
 ## 活动分区（泳道）
 
@@ -1557,12 +1552,12 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
 
 每个泳道通过垂直或水平实线与它的邻居泳道分隔，泳道上方或左侧是它的名称。
 
- **例子1：**![image](UML笔记.assets/2502367-20220930093919148-967314852.png)
+ **例子1：**![image](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433013.png)
 
 **例子2**  **无泳道**
- ![image](UML笔记.assets/2502367-20220930094143782-193097325.png)
+ ![image](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121433563.png)
  **有泳道**
-                     ![image](UML笔记.assets/2502367-20220930094152766-169637957.png)
+                     ![image](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434631.png)
 
 ## 扩展区域（循环）
 
@@ -1573,7 +1568,7 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
 
 **表示：**
 循环一个结点
-![image](UML笔记.assets/2502367-20220930115345421-93571188.png)
+![image](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434230.png)
 
 循环多个结点
 ![image](UML笔记.assets/2502367-20220930115350349-528216753.png)
@@ -1588,14 +1583,14 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
   - 一个过程在固定的时间间隔开始，例如每过一星期系统备份一次
 
 - 时间事件用沙漏符号表示
-  ![20220925103123](UML笔记.assets/20220925103123.png)
+  ![20220925103123](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434722.png)
 
 - 有进入边的时间事件
 
   - 时间事件激活一次，因而其后的动作只发生一次
   - 文本Wait 3 Days，表示等待的时间量
 
-  ![20220925103147](UML笔记.assets/20220925103147.png)
+  ![20220925103147](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434599.png)
 
 - 没有进入边的时间事件是 recurring time event
 
@@ -1603,7 +1598,7 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
     - 图中的进度条每秒更新一次
   - 对重复时间事件建模
 
-  ![20220925103221](UML笔记.assets/20220925103221.png)
+  ![20220925103221](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434482.png)
 
 - 时间事件也可以开始一个活动
 
@@ -1620,17 +1615,17 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
   - **用一个带叉子标志的动作表示**
   - 被调用的活动最好不要省略activity frame，因为要给出活动的名字以便调用
 
-![20220925103302](UML笔记.assets/20220925103302.png)
+![20220925103302](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434921.png)
 
 ### Connectors
 
 - 连接器可以提高包含很多动作的活动图的可读性
 
-  <img src="UML笔记.assets/20220925112336.png" alt="20220925112336" style="zoom:80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434907.png" alt="20220925112336" style="zoom:80%;" />
 
 ### 异常处理
 
-<img src="UML笔记.assets/20220925112354.png" alt="20220925112354" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434414.png" alt="20220925112354" style="zoom:80%;" />
 
 ### 活动图的应用
 
@@ -1682,10 +1677,6 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
 
 ### 示例
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211210821361.png" alt="image-20231211210821361" style="zoom:50%;" />
-
-### 示例
-
 要求：根据下列描述，画出“远程网络教学系统”中系统管理员工作的**带泳道**的活动图。
 
 问题描述：
@@ -1711,7 +1702,7 @@ UML1.x中，用带箭头的虚线段表示； UML2.x中，用带箭头的实线�
 
 **答案：**
 
-![image](UML笔记.assets/2502367-20221005081414480-1204862057.png)
+![image](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434838.png)
 
 **注意：** 更新页面后就可以break，不用汇合。
 
@@ -1727,39 +1718,39 @@ print(i);
 ｝
 ```
 
-<img src="UML笔记.assets/2502367-20220930115504881-1438061243.png" alt="image" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434790.png" alt="image" style="zoom: 50%;" />
 
 ### 示例
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231117204923471.png" alt="image-20231117204923471" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434973.png" alt="image-20231117204923471" style="zoom:67%;" />
 
 ### 示例
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/241f95cad1c8a786942a8ae76915933471cf50f8.jpeg@f_auto)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434024.jpeg%2540f_auto)
 
 ### 示例
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/aec379310a55b31993baad534cb5d82fcffc177d.jpeg@f_auto)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434257.jpeg%2540f_auto)
 
 ### 示例
 
-![image-20231211211417589](UML%E7%AC%94%E8%AE%B0.assets/image-20231211211417589.png)
+![image-20231211211417589](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434446.png)
 
-![image-20231211211745358](UML%E7%AC%94%E8%AE%B0.assets/image-20231211211745358.png)
+![image-20231211211745358](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121435855.png)
 
-![image-20231209202825875](UML%E7%AC%94%E8%AE%B0.assets/image-20231209202825875.png)
+![image-20231209202825875](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434306.png)
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231209202843382.png" alt="image-20231209202843382" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121434413.png" alt="image-20231209202843382" style="zoom: 50%;" />
 
 ```
 【用例场景】凭您的有效乘机身份证件(订票时输入的证件)到机场办理乘机手续:您需要在机场指定柜台办理值机(分配座位、领取登机牌)手续，机场工作人员会根据您的身份证件号码或姓名,以及您所乘坐的航班号确认您的电子客票,为您打印登机牌，并指引您办理行李托运手续;之后,您凭手中的登机牌通过机场安检,再经过登机口验收登机牌进入机舱。为了您出行顺利,建议您在飞机起飞前90分钟到达机场办理各种手续。
 ```
 
-![](UML%E7%AC%94%E8%AE%B0.assets/image-20231211211605744.png)
+![](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121435835.png)
 
 ## 总结
 
-![image-20230930232323194](UML笔记.assets/image-20230930232323194.png)
+![image-20230930232323194](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121435631.png)
 
 # 状态机图：对象生命周期的状态变化和行为:crossed_swords:
 
@@ -1796,13 +1787,13 @@ UML状态图主要由五种元素组成，分别是状态、转换、事件、�
 
 表示对象的生命周期中的一种条件/情况，有初态和终态之分
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211212119705.png" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121436400.png" style="zoom:80%;" />
 
 ### **起点和终点**
 
 起点由实心黑色圆圈表示，并且可以标有名称。 终点由内部带有点的圆圈表示，也可以用名称标记。
 
-![img](UML笔记.assets/2022030331.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121436531.gif)
 
 ### 非确定性
 
@@ -1810,7 +1801,7 @@ CD Player状态图的问题
 
 - 在closed状态按下play时，如果有碟片则播放，没有碟片不播放
 - 对这两种可能的后果建模：
-  ![20220926153122](UML笔记.assets/20220926153122.png)
+  ![20220926153122](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121436898.png)
 
 这是一个非确定的状态图
 
@@ -1827,9 +1818,7 @@ CD Player状态图的问题
   - 允许一个状态包含若干子状态
   - 子状态共享某些特性（如转移），这些特性可以被更简明地表示为一个“超状态”的特性，而组合在一起放入一个状态中
 
-  ![20220926200222](UML笔记.assets/20220926200222.png)
-
-  ![20220926200250](UML笔记.assets/20220926200250.png)
+  ![20220926200222](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121436998.png)
 
 - Not Playing
 
@@ -1857,9 +1846,6 @@ CD Player状态图的问题
   - 当再次按下这个按钮时，从暂停的位置开始继续播放
     - 和按下播放按钮的情况不同，曲目不用重新开始
 
-- 在暂停状态按下play？
-  ![20220926200402](UML笔记.assets/20220926200402.png)
-
 ### 历史状态
 
 - 历史状态
@@ -1868,7 +1854,7 @@ CD Player状态图的问题
   - 只能出现在组合状态之内
   - 到达历史状态的转移引起组合状态中最近的激活子状态再次成为激活的
 
-  ![20220926200445](UML笔记.assets/20220926200445.png)
+  ![20220926200445](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121436408.png)
 
 ### 默认历史状态
 
@@ -1876,7 +1862,7 @@ CD Player状态图的问题
   - 如果历史状态是组合状态的第一个激活子状态，根据定义，在这种情况下应该没有记忆的历史
   - 在这种情况下，需要指定一个默认状态成为激活的
 - 从历史状态向需要的默认状态画一个无标注的转移
-  ![20220926200510](UML笔记.assets/20220926200510.png)
+  ![20220926200510](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121436464.png)
 
 ## 转换:crossed_swords:
 
@@ -1916,10 +1902,10 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
   - 在状态图上，可以通过为转移增加监护条件来表明在什么情况下将激发该转移
   - 监护条件是转移的规格说明的一部分，写在标注该转移的事件名字之后，并用方括号括起来。
 
-  <img src="image/UML/20220926153205.png" alt="20220926153205" style="zoom: 80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121436475.png" alt="20220926153205" style="zoom: 80%;" />
 
 - 用监护条件区分转移
-  <img src="UML笔记.assets/20220926153231.png" alt="20220926153231" style="zoom:80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121436055.png" alt="20220926153231" style="zoom: 67%;" />
 
 ## 动作 (Action)
 
@@ -1934,7 +1920,7 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 - 动作被看作是简短的、自包含的一段处理，所花费的完成时间可以忽略
 - 动作的定义特征是它在转移到达新状态之前完成；隐含着动作不能由对象可能检测到的仸何其他事件中断，而必须总是执行完成
 
-<img src="UML笔记.assets/image-20231002113046494.png" alt="image-20231002113046494" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121436261.png" alt="image-20231002113046494" style="zoom: 80%;" />
 
 
 
@@ -1943,7 +1929,7 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 - 入口动作（entry/action）
   - 每当一个状态变为激活状态时，就执行入口动作，紧接在通向该状态的转移上的动作完成之后
 - 自转移
-  ![20220926195531](UML笔记.assets/20220926195531.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121436636.png" alt="20220926195531" style="zoom:67%;" />
 - 出口动作（exit/action）
   - 只要离开该状态的转移激发时就会执行
 
@@ -1951,17 +1937,17 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 有时您不想在正常初始状态下进入子机。 例如，在下面的子机中，通常以“Initializing”状态开始，但如果由于某种原因不需要执行初始化，则可以通过以下方式以“Ready”状态开始过渡到指定的入口点。
 
-![img](UML笔记.assets/2022030391.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437998.gif)
 
 下图显示了上一级的状态机。
 
-![img](UML笔记.assets/20220303101.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437601.gif)
 
 ### **出口点**
 
 以与入口点类似的方式，可以命名替代出口点。 下图给出了一个示例，其中在主处理状态之后执行的状态取决于用于转换出状态的路由。
 
-![img](UML笔记.assets/20220303111.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437845.gif)
 
 
 
@@ -1973,17 +1959,17 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 **Join节点**是伪状态，用于合并从不同正交区域中的源顶点发出的若干转换。进入连接顶点的过渡不能有保护或触发，它必须至少有两个传入过渡和一个传出过渡。
 
-![img](UML笔记.assets/webp.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437116.webp)
 
 **合并节点 (Merge Node)**用于将使用决策节点创建的不同决策路径重新组合在一起。
 
 **选择 (Choice)** 是一种伪状态，当达到该状态时，导致动态评估其传出转换的触发器的保护。这实现了动态条件分支。它允许将转换分成多个传出路径，以便决定采用哪条路径。
 
-![img](UML笔记.assets/webp-169621778656477.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437832.webp)
 
 **示例：状态机图的选择节点**
 
-![img](UML笔记.assets/webp-169621778656478.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437626.webp)
 
 **Terminate**是伪状态，表示状态机的生命线已经结束。终止伪状态由十字表示。
 
@@ -1991,7 +1977,7 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 
 
-![img](UML笔记.assets/webp-169621778656479.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437292.webp)
 
 ## 复合状态 (composite State)
 
@@ -2003,13 +1989,13 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 通过显示某些状态仅在特定上下文（封闭状态）内可能，子状态用于简化复杂的平面状态机。
 
-![img](UML笔记.assets/webp-169621780933084.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437619.webp)
 
 #### 复合状态与子机状态 (Composite State vs Sub-machine State)
 
 除了复合状态，还有另一个称为子机状态的符号，它在语义上等同于复合状态。
 
-![img](UML笔记.assets/webp-169621780933185.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437748.webp)
 
 #### 正交状态 (Orthogonal State)
 
@@ -2021,7 +2007,7 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 退出：必须在所有区域达到最终状态才能触发完成事件
 
-![img](UML笔记.assets/webp-169621780933186.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437199.webp)
 
 #### 注意
 
@@ -2031,13 +2017,13 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 历史状态允许状态机重新进入在离开复合状态之前处于活动状态的最后一个子状态。历史状态使用的示例如下图所示：
 
-![img](UML笔记.assets/webp-169621780933187.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437198.webp)
 
 **过渡**
 
 从一种状态到下一种状态的转换用带箭头的线表示。转换可能有触发器、守卫和效果，如下所示。
 
-![img](UML笔记.assets/2022030341.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437688.gif)
 
 “触发器”是转换的原因，可能是信号、事件、某些条件的变化或时间的流逝。“Guard”是一个条件，它必须为真才能使触发器引起转换。“效果”是一个动作，它将作为转换的结果直接在拥有状态机的对象上调用。
 
@@ -2045,7 +2031,7 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 在上面的过渡示例中，效果与过渡相关联。如果目标状态有许多到达它的转换，并且每个转换都有与之关联的相同效果，那么最好将效果与目标状态相关联而不是转换。这可以通过为状态定义一个进入动作来完成。下图显示了具有进入操作和退出操作的状态。
 
-![img](UML笔记.assets/2022030351.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437470.gif)
 
 也可以定义在事件上发生的动作，或总是发生的动作。 可以定义任意数量的每种类型的动作。
 
@@ -2053,17 +2039,17 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 状态可以有一个返回自身的转换，如下图所示。 当效果与过渡相关联时，这是最有用的。
 
-![img](UML笔记.assets/2022030361.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437448.gif)
 
 **复合状态**
 
 状态机图可以包括子机图，如下例所示。
 
-![img](UML笔记.assets/2022030371.gif)
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437240.gif" alt="img" style="zoom:75%;" />
 
 显示相同信息的另一种方法如下。
 
-![img](UML笔记.assets/2022030381.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437851.gif)
 
 以上版本中的符号表示Check PIN子机的详细信息以单独的图表显示。
 
@@ -2073,25 +2059,25 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 选择伪状态显示为一个菱形，其中一个转换到达，两个或多个转换离开。 下图显示，在选择伪状态之后到达的任何状态都取决于在执行前一个状态期间选择的消息格式。
 
-![img](UML笔记.assets/20220303121.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437396.gif)
 
 **结伪状态**
 
 结点伪状态用于将多个转换链接在一起。 单个结点可以有一个或多个传入和一个或多个传出转换； 可以将保护应用于每个转换。 连接点是无语义的。 将传入转换拆分为多个传出转换的结实现静态条件分支，而不是实现动态条件分支的选择伪状态。
 
-![img](UML笔记.assets/20220303131.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437338.gif)
 
 **终止伪状态**
 
 进入终止伪状态表明状态机的生命线已经结束。 终止伪状态用叉号表示。
 
-![img](UML笔记.assets/20220303141.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437682.gif)
 
 **历史状态**
 
 历史状态用于记住状态机被中断时的先前状态。下图说明了历史状态的使用。该示例是属于洗衣机的状态机。
 
-![img](UML笔记.assets/20220303151.gif)
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121437056.gif" alt="img" style="zoom:80%;" />
 
 在这种状态机中，当洗衣机运行时，它会从“Washing”经过“Rinsing”再到“Spinning”。如果停电，洗衣机将停止运行并进入“关机”状态。然后当电源恢复时，在“历史状态”符号处进入运行状态，这意味着它应该从上次停止的地方恢复。
 
@@ -2099,9 +2085,7 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 一个状态可以被划分为包含多个同时存在和执行的子状态的区域。下面的例子表明，在“Applying Brakes”状态下，前后制动器将同时独立运行。注意 fork 和 join 伪状态的使用，而不是选择和合并伪状态。这些符号用于同步并发线程。
 
-![img](UML笔记.assets/20220303161.gif)
-
-
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121438167.gif)
 
 ## 例子
 
@@ -2109,55 +2093,55 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 ### 示例
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211213643562.png" alt="image-20231211213643562" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121438421.png" alt="image-20231211213643562" style="zoom: 67%;" />
 
 ### 示例
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211213818529.png" alt="image-20231211213818529" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121438978.png" alt="image-20231211213818529" style="zoom:67%;" />
 
 
 
 ### 示例
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211214123412.png" alt="image-20231211214123412" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121438727.png" alt="image-20231211214123412" style="zoom:67%;" />
 
 ### 示例
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211214242799.png" alt="image-20231211214242799" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121438893.png" alt="image-20231211214242799" style="zoom:67%;" />
 
 ### 示例
 
 可以使用条件 也可以使用判断
 
-![image-20231211213603760](UML%E7%AC%94%E8%AE%B0.assets/image-20231211213603760.png)
+![image-20231211213603760](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121438632.png)
 
 ![image-20231211213615683](UML%E7%AC%94%E8%AE%B0.assets/image-20231211213615683.png)
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/v2-a1bd2ebdc21060b28c867a04d55f802a_r.jpg)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121438175.jpg)
 
 ### 示例
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211213525110.png" alt="image-20231211213525110" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121438277.png" alt="image-20231211213525110" style="zoom:67%;" />
 
 ### 示例
 
-![image-20231211213449141](UML%E7%AC%94%E8%AE%B0.assets/image-20231211213449141.png)
+![image-20231211213449141](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121438912.png)
 
 ### 示例
 
-![image-20231209203435681](UML%E7%AC%94%E8%AE%B0.assets/image-20231209203435681.png)
+![image-20231209203435681](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121438853.png)
 
  <img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231209203444047.png" alt="image-20231209203444047" style="zoom: 50%;" />
 
 ### 示例
 
-![image-20231209203515165](UML%E7%AC%94%E8%AE%B0.assets/image-20231209203515165.png)
+![image-20231209203515165](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121439585.png)
 
-![image-20231209203538424](UML%E7%AC%94%E8%AE%B0.assets/image-20231209203538424.png)
+![image-20231209203538424](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121439677.png)
 
 ## 总结
 
-![20220926201447](UML笔记.assets/20220926201447.png)
+![20220926201447](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121439542.png)
 
 # 交互图：描述对象之间的动态合作关系
 
@@ -2180,25 +2164,23 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 #### 1. 消息箭头
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211215645144.png" alt="image-20231211215645144" style="zoom:88%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121439838.png" alt="image-20231211215645144" style="zoom:88%;" />
 
-![image-20231017154731996](UML笔记.assets/image-20231017154731996.png)
+![image-20231017154731996](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121439595.png)
 
-![image-20231017154751898](UML笔记.assets/image-20231017154751898.png)
+![image-20231017154751898](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121439246.png)
 
 #### 2.生命线
 
 每个参与者对象有一条生命线（lifeline），生命线名称可带下划线。**当使用下划线时，意味着序列图中的生命线代表一个类的特定实例。**
 
-​                         ![img](UML笔记.assets/2012013015384562.gif) 
-
-　![20220925144311](UML笔记.assets/20220925144311.png)
+　![20220925144311](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121439889.png)
 
 #### **3.** 同步消息
 
 发送人在它继续之前，将等待同步消息响应。
 
-​                                               ![img](UML笔记.assets/2012013015395188.gif)　　 
+​                                               ![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121439355.gif)　　 
 
 调用一个同步消息时，消息发送者要等待消息接受者返回
 
@@ -2206,31 +2188,31 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
   - 同步消息隐含有返回，可以不必画出
   - 如果有，则从激活条的末尾返回，表示控制返回给调用者
 
-![20220925152002](UML笔记.assets/20220925152002.png)
+![20220925152002](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121440767.png)
 
-![20220925152057](UML笔记.assets/20220925152057.png)
+![20220925152057](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121440207.png)
 
 ####  4. 异步消息
 
 在发送方继续之前，无需等待响应的消息。
 
-​                                            ![img](UML笔记.assets/2012013015401689.gif) 
+​                                            ![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121440679.gif) 
 
 异步消息被调用时，消息发送者不等待其返回，继续自己的其他交互
 
 - 当 messageReceiver 对象处理 foo( ) 消息时，messageCaller 对象不等待其返回，而是可以在另一个对象上执行其他的同步消息继续交互
 
-![20220925152123](UML笔记.assets/20220925152123.png)
+![20220925152123](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121440892.png)
 
 #### 5. 注释
 
-​                                           ![img](UML笔记.assets/2012013015404857.gif)
+​                                           ![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121440886.gif)
 
 #### 6. 约束
 
 约束的符号很简单；格式是: [Boolean Test]
 
-​                                        ![img](UML笔记.assets/2012013015413776.gif) 
+​                                        ![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121440649.gif) 
 
 #### 7.  组合片段
 
@@ -2240,13 +2222,13 @@ UML中，转换由5个部分组成，分别为源状态、目标状态、触发�
 
 抉择用来指明在两个或更多的消息序列之间的互斥的选择，相当于经典的if..else
 
-![img](UML笔记.assets/2012013015543491.gif) 
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121440250.gif) 
 
 ##### **选项（Opt**）
 
 包含一个可能发生或不发生的序列
 
-![img](UML笔记.assets/2012013015551193.gif) 
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121440722.gif) 
 
 ##### **循环（Loop**）
 
@@ -2257,13 +2239,11 @@ loop(min times,max times)
 [guard_condition]
 ```
 
-![20220925154157](UML笔记.assets/20220925154157.png)
-
-![img](UML笔记.assets/2012013015553457.gif)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121441761.gif)
 
 ##### **并行（Par**）
 
-![](UML笔记.assets/2012013015555581.gif) 
+![](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121441896.gif) 
 
 **下表列出了常用的组合片段：**
 
@@ -2286,7 +2266,7 @@ loop(min times,max times)
   - 条件片段有两个或多个子片段，每个子片段都有一个guard condition
   - 到达条件片段时，执行guard condition为真的子片段
 
-  ![20220925152750](UML笔记.assets/20220925152750.png)
+  ![20220925152750](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121441713.png)
 
 - loop
 
@@ -2301,7 +2281,7 @@ loop(min times,max times)
     [guard_condition]
     ```
 
-    ![20220925154157](UML笔记.assets/20220925154157.png)
+    ![20220925154157](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121441724.png)
 
 - par
 
@@ -2310,28 +2290,26 @@ loop(min times,max times)
   - 不同子片段中消息的相对顺序是不确定的，消息可以以仸何可能的顺序交错。
   - 当所有子片段都完成执行后，并发执行再次合并为一个流。
 
-  ![20220925154232](UML笔记.assets/20220925154232.png)
+  ![20220925154232](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121441968.png)
 
 - opt
 
   - operator opt 的意思是可选的片段
   - 根据片段上的guard condition 来决定是否执行该片段中包含的交互
 
-  <img src="UML笔记.assets/20220925154246.png" alt="20220925154246" style="zoom:80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121441347.png" alt="20220925154246" style="zoom:80%;" />
 
-  <img src="UML笔记.assets/20220925154309.png" alt="20220925154309" style="zoom:80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121441636.png" alt="20220925154309" style="zoom:80%;" />
 
 - ref
 
   - 引用一个已定义的交互
   - 交互使用是对另一个交互的引用，通常在它自己的序列图中定义。
 
-  ![20220925154321](UML笔记.assets/20220925154321.png)
-
-  <img src="UML笔记.assets/20220925154332.png" alt="20220925154332" style="zoom:80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121441021.png" alt="20220925154332" style="zoom:80%;" />
 
 - 被引用的交互
-         <img src="UML笔记.assets/20220925154406.png" alt="20220925154406" style="zoom:80%;" />
+                           <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121441213.png" alt="20220925154406" style="zoom: 67%;" />
 
 **有关如何解释序列的片段**
 
@@ -2358,7 +2336,7 @@ loop(min times,max times)
   - 发送`<<destroy>>`消息，在要被销毁的参与者的生命线上画一个“X”
   - 只在生命线上画“X”（如java语言中没有析构函数）
 
-<img src="UML笔记.assets/20220925152203.png" alt="20220925152203" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121442260.png" alt="20220925152203" style="zoom:80%;" />
 
 ### 用例实现（realization）
 
@@ -2366,101 +2344,67 @@ loop(min times,max times)
 
 - 例如， Create a new Regular Blog Account 用例的实现
 
-![20220925152233](UML笔记.assets/20220925152233.png)
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121442435.png" alt="20220925152233" style="zoom:67%;" />
 
 - 从用例描述的Main Flow中抽出构造序列图所需的信息
 
   - 包含了继承的父用例步骤，但没有考虑分支的情况
 
-  ![20220925152405](UML笔记.assets/20220925152405.png)
-
-  ![20220925152420](UML笔记.assets/20220925152420.png)
-
-### 细化序列图
-
-- 加入更多的交互细节，将交互分解到不同的对象
-
-  - 上面的序列图只显示了外部actor和系统的交互
-  - CMS系统在上图中由单独一个对象表示，但实现时不会如此
-    - 比如，至少UI的功能会分离出来
-  - 细化的序列图如下页所示
-
-- 每增加一个参与者对象，序列图就会更复杂
-  ![20220925152516](UML笔记.assets/20220925152516.png)
-
-- 对象创建
-
-  - 用例Create a new Regular Blog Account, 实际创建的blog账户在序列图中的表示
-  - 创建账户时使用的作者信息author details也不是一开始就存在的
-
-- 对象删除
-
-  - authorDetails:AuthorDetails 对象在创建了新账户之后就不再需要，将其删除
-
-  ![20220925152601](UML笔记.assets/20220925152601.png)
-
-- 应用异步消息
-
-  - Administrator 发送了clickSubmit( ) 消息之后不需要等待返回
-  - 可以用异步消息建模
-  - 将 clickSubmit() 从同步消息转换为异步消息意味着序列图现在显示，当提交新的常规博客账户信息时，用户界面不会锁定并等待新账户的创建，而是允许管理员角色继续使用系统。
-  - 为了让管理员接收关于新博客账户是否已创建的反馈，返回消息箭头替换为新的 accountCreationNotification() 异步消息，因为异步消息clickSubmit()没有返回值。
-
-  ![20220925152641](UML笔记.assets/20220925152641.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121449252.png" alt="image-20231212144353947" style="zoom: 80%;" />
 
 ### 例子
 
 #### 示例
 
-![image-20231209231805527](UML%E7%AC%94%E8%AE%B0.assets/image-20231209231805527.png)
+![image-20231209231805527](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121449869.png)
 
-![image-20231211215316899](UML%E7%AC%94%E8%AE%B0.assets/image-20231211215316899.png)
-
-#### 示例
-
-![image-20231211215852929](UML%E7%AC%94%E8%AE%B0.assets/image-20231211215852929.png)
+![image-20231211215316899](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121449169.png)
 
 #### 示例
 
-![](UML%E7%AC%94%E8%AE%B0.assets/image-20231209150703201.png)
-
-
-
-![image-20231209203115712](UML%E7%AC%94%E8%AE%B0.assets/image-20231209203115712.png)
-
-![image-20231209203128184](UML%E7%AC%94%E8%AE%B0.assets/image-20231209203128184.png)
+![image-20231211215852929](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450965.png)
 
 #### 示例
 
-![image-20231209203304058](UML%E7%AC%94%E8%AE%B0.assets/image-20231209203304058.png)
+![](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450309.png)
+
+
+
+![image-20231209203115712](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450655.png)
+
+![image-20231209203128184](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450120.png)
+
+#### 示例
+
+![image-20231209203304058](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450792.png)
 
 ![image-20231209203321626](UML%E7%AC%94%E8%AE%B0.assets/image-20231209203321626.png)
 
 #### 示例
 
-![img](UML笔记.assets/1775037-20200710151555933-518672375.jpg)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450709.jpg)
 
 #### 示例
 
 **练习1：借书时序图**
 
-　　　　![img](UML%E7%AC%94%E8%AE%B0.assets/1429856-20180706162537895-1445228428.png)
+　　　　![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450144.png)
 
 **练习2：ATM 用户成功登陆的时序图**
 
-　　　　![img](UML%E7%AC%94%E8%AE%B0.assets/1429856-20180706162546919-2140002862.png)
+　　　　![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450131.png)
 
 　**练习3：函数1调用函数2；函数2调用函数3；函数2打印日志；最后函数2运行完毕，返回到函数1。**
 
-　　　　![img](UML%E7%AC%94%E8%AE%B0.assets/1429856-20180706162556629-840512157.jpg)
+　　　　![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450778.jpg)
 
 **练习4：画出三层架构成功登陆的时序图**
 
-　　　　![img](UML%E7%AC%94%E8%AE%B0.assets/1429856-20180706162605222-1872034271.png)
+　　　　![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450996.png)
 
-![image-20231211181540709](UML%E7%AC%94%E8%AE%B0.assets/image-20231211181540709.png)
+![image-20231211181540709](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450977.png)
 
-![v2-b12884566cc7f397172f5fc07d8ee763_b](UML%E7%AC%94%E8%AE%B0.assets/v2-b12884566cc7f397172f5fc07d8ee763_b.png)
+![v2-b12884566cc7f397172f5fc07d8ee763_b](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450823.png)
 
 ## 通讯图（Communication Diagram）：Focusing on Interaction Links
 
@@ -2475,7 +2419,7 @@ loop(min times,max times)
 
 ### 基本元素
 
-<img src="UML笔记.assets/20220925154542.png" alt="20220925154542" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450700.png" alt="20220925154542" style="zoom: 67%;" />
 
 ### 对象/角色
 
@@ -2486,7 +2430,7 @@ loop(min times,max times)
     - 可以指定两个、也可以只指定其中一个、或不指定（匿名对象）
   - 角色名格式 `</rolename> : <class>`
 
-![20220925154643](UML笔记.assets/20220925154643.png)
+![20220925154643](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450551.png)
 
 ### 通讯链
 
@@ -2494,7 +2438,7 @@ loop(min times,max times)
   - 通讯链由连接两个对象的线表示，如图
   - 链的作用是允许消息在不同的对象之间传递
 
-![20220925154703](UML笔记.assets/20220925154703.png)
+![20220925154703](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450714.png)
 
 ### 消息
 
@@ -2504,46 +2448,46 @@ loop(min times,max times)
   - 箭头上标注消息的signature（名字、参数表）
   - 如果想要说明在交互期间消息调用的次序，可以用数字标记
 
-  ![20220925154737](UML笔记.assets/20220925154737.png)
+  ![20220925154737](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121451721.png)
 
 - 通讯图上的消息使用数字编号来表示次序
 
   - 编号从1开始，逐一增加
   - 表示嵌套消息的分级编号方法
     - 如图，1.1和1.2是消息1的嵌套消息
-      ![20220925154755](UML笔记.assets/20220925154755.png)
+      ![20220925154755](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121450650.png)
 
 - 同时发生的消息
 
   - 同时被调用的消息用数字-字母法表示
   - 如图，消息 2a.messageB(), 2b.messageB(), 和 2c.messageC() 是在调用了 1.messageA()之后同时被调用的
-    ![20220925154828](UML笔记.assets/20220925154828.png)
+    ![20220925154828](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121451632.png)
 
 - 根据条件发送消息
 
   - 可以设置监视条件（guard condition）描述只有在特定条件为true时才调用某个消息
     - 条件为真时调用消息，否则消息被略过
 
-  ![20220925154850](UML笔记.assets/20220925154850.png)
+  <img src="UML笔记.assets/20220925154850.png" alt="20220925154850" style="zoom:80%;" />
 
 - 多次调用的消息
 
   - 描述循环的消息可以使用星号（*）
     - 例如，表示发生10次的循环约束 `*[i = 0 .. 9]`
 
-  ![20220925154919](UML笔记.assets/20220925154919.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121451935.png" alt="20220925154919" style="zoom: 80%;" />
 
 - 对象发送给自己的消息
 
   - 对象可以给自己发消息
   - 需要有一个对象到自身的链接
 
-  ![20220925154934](UML笔记.assets/20220925154934.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121451668.png" alt="20220925154934" style="zoom:80%;" />
 
 ### 用通讯图描述交互
 
 - CMS中创建blog账户的序列图
-  ![20220925155044](UML笔记.assets/20220925155044.png)
+  ![20220925155044](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121451026.png)
 
 - 第一步：确定参与者，并将其加入通讯图
 
@@ -2551,25 +2495,23 @@ loop(min times,max times)
   - 如果没有序列图，通过用例描述获得
   - 有些UML建模工具支持由序列图转换得到通讯图
 
-  ![20220925155215](UML笔记.assets/20220925155215.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121451867.png" alt="20220925155215" style="zoom:80%;" />
 
 - 第二步：加入对象之间的链接
-  ![20220925155231](UML笔记.assets/20220925155231.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121451970.png" alt="20220925155231" style="zoom:80%;" />
 
 - 第三步：添加对象之间发送的消息
 
   - 最好从发起交互的对象开始
 
-  ![20220925155250](UML笔记.assets/20220925155250.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121452198.png" alt="20220925155250" style="zoom:67%;" />
 
 - 添加对象之间发送的消息
 
   - 根据序列图依次添加后续的消息
     - 消息的编号
 
-  ![20220925155326](UML笔记.assets/20220925155326.png)
-
-![20220925155351](UML笔记.assets/20220925155351.png)
+  <img src="UML笔记.assets/20220925155326.png" alt="20220925155326" style="zoom:67%;" />
 
 ### 通讯图 vs 序列图
 
@@ -2589,8 +2531,6 @@ loop(min times,max times)
   - 如果关注交互的参与者之间的链接，使用通讯图
   - 时间允许的话，两种都使用
 
-
-
 - 和序列图表示法的区别
   - 轴的时间从左到右增加
   - 生命线显示在垂直排列的单独隑间中
@@ -2609,13 +2549,11 @@ loop(min times,max times)
   - 状态、条件
   - 时间
 
-
-
 ## 定时图（Timing Diagrams）：Focusing on Interaction Timing
 
 ### 基本元素
 
-![20220925155558](UML笔记.assets/20220925155558.png)
+![20220925155558](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121452298.png)
 
 ### 构造时序图
 
@@ -2627,7 +2565,7 @@ loop(min times,max times)
   - Requirement A.2 (Updated)
     - The content management system shall allow an administrator to create a new regular blog account within five seconds of the information being entered, provided the personal details of the author are verified using the Author Credentials Database
 
-![20220925155643](UML笔记.assets/20220925155643.png)
+![20220925155643](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121452543.png)
 
 ### 参与者对象
 
@@ -2637,7 +2575,7 @@ loop(min times,max times)
   - 图中没有对象的创建和销毁信息
     - 时序图关注与时间相关的状态变化
 
-![20220925155722](UML笔记.assets/20220925155722.png)
+<img src="UML笔记.assets/20220925155722.png" alt="20220925155722" style="zoom:80%;" />
 
 ### States 状态
 
@@ -2647,9 +2585,7 @@ loop(min times,max times)
   - 对象在另一个事件（比如消息返回）发生之前将一直处于该状态
   - 在时序图上，状态放在相应的参与者旁，水平排列
 
-  ![20220925155757](UML笔记.assets/20220925155757.png)
-
-![20220925155810](UML笔记.assets/20220925155810.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121452283.png" alt="20220925155757" style="zoom:80%;" />
 
 ### 时间
 
@@ -2662,7 +2598,7 @@ loop(min times,max times)
   - Exact Time Measurements 确切时间度量
   - Relative Time Indicators 相对时间指示器
 
-  ![20220925155833](UML笔记.assets/20220925155833.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121455631.png" alt="20220925155833" style="zoom:67%;" />
 
 - 时序图中的 t
 
@@ -2675,7 +2611,7 @@ loop(min times,max times)
   - 例如，Requirement A.2中的时间约束
     - 图中起始时间用秒度量，所以一个 t 表示一秒
 
-  ![20220925155903](UML笔记.assets/20220925155903.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121454082.png" alt="20220925155903" style="zoom:67%;" />
 
 ### 对象的状态线
 
@@ -2685,9 +2621,7 @@ loop(min times,max times)
   - 对象当前的状态用一条水平线表示，状态线
   - 交互中的仸何给定时间点，对象的状态线与该对象的一个状态对齐
 
-  ![20220925155949](UML笔记.assets/20220925155949.png)
-
-![20220925160011](UML笔记.assets/20220925160011.png)
+  ![20220925155949](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121453483.png)
 
 ### 事件和消息
 
@@ -2704,16 +2638,12 @@ loop(min times,max times)
   - event1 从调用到接收用了一个单位时间
   - p1:Participant1 调用，p2:Participant2接收
 
-  ![20220925160046](UML笔记.assets/20220925160046.png)
+  ![20220925160046](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121454464.png)
 
 - 在实际应用中，可以向时序图中同时加入事件和状态
 
 - 根据序列图向时序图中添加事件比较简单
 
-  - 序列图已经显示了对象之间传递的消息
-  - 例如下图
-
-  ![20220925160105](UML笔记.assets/20220925160105.png)
 
 ### 时间约束
 
@@ -2724,7 +2654,7 @@ loop(min times,max times)
   - 时间约束可以与一个事件或一个状态关联
   - 时间约束可以带或不带约束边界箭头
 
-![20220925160234](UML笔记.assets/20220925160234.png)
+![20220925160234](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121454478.png)
 
 给状态和事件添加时间约束
 
@@ -2733,31 +2663,31 @@ loop(min times,max times)
 - 该约束涉及参与者之间的多个不同的嵌套交互
 - 需要建模者的技巧：决定给哪些事件或状态如何分配这5秒钟，以便每个参与者能够做自己的工作
 
-![20220925160348](UML笔记.assets/20220925160348.png)
+![20220925160348](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121454954.png)
 
 #### 时间约束的格式
 
-![20220925160312](UML笔记.assets/20220925160312.png)
+![20220925160312](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121455618.png)
 
 ### 组织时序图
 
 - 组织时序图上的对象
   - 随着事件和时间信息的加入，如果发现对象的位置布局不合理，可以进行调整
   - 如下图
-    ![20220926134051](UML笔记.assets/20220926134051.png)
-- ![20220926134215](UML笔记.assets/20220926134215.png)
+    <img src="UML笔记.assets/20220926134051.png" alt="20220926134051" style="zoom:80%;" />
+- <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121455197.png" alt="20220926134215" style="zoom: 67%;" />
 - 如果已经有序列图，可以在一开始安排好对象的位置
   - 根据对象在序列图中的位置，逆时针旋转90度
-    ![20220926134303](UML笔记.assets/20220926134303.png)
+    <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121455387.png" alt="20220926134303" style="zoom: 80%;" />
 
 ### 时序图的另一种表示法
 
 - 当包含状态数目比较多时，可以使用简化的记号
   - 对象和时间的表示法同前，状态和状态改变用不同的方法表示
   - 例如，下面是常规的时序图表示法
-    ![20220926134324](UML笔记.assets/20220926134324.png)
+    ![20220926134324](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121456041.png)
 - 时序图的另一种表示法（紧凑表示）
-  ![20220926134344](UML笔记.assets/20220926134344.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121456443.png" alt="20220926134344" style="zoom: 67%;" />
 - 常规时序图表示法（状态时间线）
   - 状态在相关对象旁列出
   - 用状态线表示对象在给定时间处于什么状态
@@ -2774,7 +2704,7 @@ loop(min times,max times)
 
 ### 总结
 
-![image-20231210162811816](UML%E7%AC%94%E8%AE%B0.assets/image-20231210162811816.png)
+![image-20231212145746494](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121457653.png)
 
 ## 交互概览图（Interaction Overview Diagrams）：Completing the Interaction Picture
 
@@ -2795,12 +2725,12 @@ loop(min times,max times)
 
 协作图(也叫合作图)是一种交互图。顺序图(时序图)主要侧重于对象间消息传递在时间上的先后关系， **而协作图表达对象间的交互过程及对象间的关联关系。**
 
-　　　　**![img](UML%E7%AC%94%E8%AE%B0.assets/1429856-20180706172552406-392677837.png)**
+　　　　![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121457299.png)
 
 
 ## 总结
 
-![20220926135117](image/UML/20220926135117.png)
+![20220926135117](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121457919.png)
 
 # 组合结构：对组合类的内部结构建模
 
@@ -2816,7 +2746,7 @@ loop(min times,max times)
   - 描述一些主要的UML图不能捕捉的某些系统细节
     - 如类图、顺序图
   - 组合结构提供了系统组成部件的视图，是系统模型逻辑视图的一部分
-    ![20220928134147](UML笔记.assets/20220928134147.png)
+    ![20220928134147](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121458931.png)
 - 组合结构非常适合某些特定情景下的建模
   - 内部结构（Internal structure）
     - 显示类中包含的组成部分以及这些部分之间的关系
@@ -2844,7 +2774,7 @@ loop(min times,max times)
   - 使用组合关系描述BlogEntry的组成
   - 用关联关系描述Introduction持有MainBody的引用
 
-  ![20220928134500](UML笔记.assets/20220928134500.png)
+  ![20220928134500](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121458377.png)
 
 
 ## 对象图
@@ -2853,12 +2783,12 @@ loop(min times,max times)
 
   - 我们建模的意图是描述这样的对象结构
 
-  ![20220928134529](UML笔记.assets/20220928134529.png)
+  ![20220928134529](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121458103.png)
 
 - 下面的对象图是这个类图的合法实例吗？
-  ![20220928134557](UML笔记.assets/20220928134557.png)
+  ![20220928134557](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121458512.png)
 
-  ![20220928134611](UML笔记.assets/20220928134611.png)
+  ![20220928134611](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121458007.png)
 
 
 ## 存在的问题
@@ -2889,7 +2819,7 @@ loop(min times,max times)
 
   - 它包含的项直接画在内部，称为part
 
-  ![20220928134752](UML笔记.assets/20220928134752.png)
+  <img src="UML笔记.assets/20220928134752.png" alt="20220928134752" style="zoom: 67%;" />
 
 
 ## Parts of a Class
@@ -2905,7 +2835,7 @@ loop(min times,max times)
 
 ## 内部结构和类图
 
-![20220928134931](UML笔记.assets/20220928134931.png)
+![20220928134931](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121458173.png)
 
 
 ## 连接器（Connector）
@@ -2914,7 +2844,7 @@ loop(min times,max times)
 
   - connector两端可以规定重数，如同关联重数一样
 
-  ![20220928134946](UML笔记.assets/20220928134946.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121458390.png" alt="20220928134946" style="zoom: 67%;" />
 
 - Connector是一个使parts之间能够通讯的链接
 
@@ -2935,9 +2865,9 @@ loop(min times,max times)
   - 通过关联被引用，可以由系统中的其他类共享
   - 表示法：用虚线框出
 
-  ![20220928135122](UML笔记.assets/20220928135122.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459481.png" alt="20220928135122" style="zoom:67%;" />
 
-  ![20220928135136](UML笔记.assets/20220928135136.png)
+  ![20220928135136](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459325.png)
 
 
 ## 包含部件之间的复杂关系
@@ -2947,7 +2877,7 @@ loop(min times,max times)
   - 例如，在一个UI frame中，由两个panel显示三个文件，其中一个panel显示两个被比较的文件，另一个panel显示合并后的文件
   - 通过定义更详细的角色，可以在内部结构中描述这种关联
 
-  ![20220928135212](UML笔记.assets/20220928135212.png)
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459955.png" alt="20220928135212" style="zoom: 80%;" />
 
 
 ## 内部结构实例
@@ -2958,7 +2888,7 @@ loop(min times,max times)
   - 要将类的parts和properties也作为实例显示，格式 `{<name>} / <role> : <type>`
   - 要加上下划线
 
-  ![20220928135238](UML笔记.assets/20220928135238.png)
+  ![20220928135238](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459633.png)
 
 
 ## 端口（Ports）
@@ -2972,7 +2902,7 @@ loop(min times,max times)
 
   - 表示不同类型的clients使用类的不同方式
   - 端口的表示法
-    ![20220928135258](UML笔记.assets/20220928135258.png)
+    ![20220928135258](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459011.png)
 
 - 例如, Wiki 类有两种不同的用法:
 
@@ -2980,7 +2910,7 @@ loop(min times,max times)
   2. 向希望执行操作的管理员提供维护工具，例如在提供不正确的内容时回滚Wiki
 
   - 类的每个不同用法由一个端口表示，并用端口名说明其用途
-    ![20220928135323](UML笔记.assets/20220928135323.png)
+    ![20220928135323](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459102.png)
 
 - 端口通常都有与之关联的接口
 
@@ -3001,7 +2931,7 @@ loop(min times,max times)
   - Updateable and Viewable 接口与UserServices端口关联，允许其他类通过这些接口查看和更新Wiki
   - Maintenance 端口有一个供接口Rollback 和一个需接口VersionControl
 
-  ![20220928141446](UML笔记.assets/20220928141446.png)
+  ![20220928141446](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459244.png)
 
 
 ## 协作（Collaboration）
@@ -3016,7 +2946,7 @@ loop(min times,max times)
   - 例如在设计CMS时遇到的一个问题
     - CMS需要一个内容审批过程：author提交内容，reviewer可能拒绝或将其转给editor，editor可能拒绝或接受该内容
   - 用责任链Chain of Responsibility (COR) 设计模式解决这个问题
-    ![20220928141519](UML笔记.assets/20220928141519.png)
+    ![20220928141519](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459509.png)
 
 - 责任链设计模式
 
@@ -3024,7 +2954,7 @@ loop(min times,max times)
   - 在 COR模式中， client 提交请求，链中的每个 handler 决定是处理该请求还是将请求传递给下一个handler.
     - 在CMS问题中，author的角色是client，reviewer 和editor扮演 handler的角色
   - 描述COR模式如何解决这个问题的序列图
-    ![20220928141610](UML笔记.assets/20220928141610.png)
+    ![20220928141610](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459055.png)
 
 - 用协作对这个模式建模的方法一
 
@@ -3033,9 +2963,9 @@ loop(min times,max times)
     - 参与者由连接器链接起来表示它们会通信
     - 协作的名字写在椭圆形上部
 
-  ![20220928141711](UML笔记.assets/20220928141711.png)
+  ![20220928141711](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459744.png)
 
-  ![20220928141728](UML笔记.assets/20220928141728.png)
+  <img src="UML笔记.assets/20220928141728.png" alt="20220928141728" style="zoom:67%;" />
 
 - 用协作对这个模式建模的方法二
 
@@ -3043,9 +2973,9 @@ loop(min times,max times)
     - 参与者的角色写在连线上
   - 这种表示法对显示参与者类或接口的细节比较有用
 
-  ![20220928141748](UML笔记.assets/20220928141748.png)
+  ![20220928141748](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459805.png)
 
-  ![20220928141805](UML笔记.assets/20220928141805.png)
+  ![20220928141805](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459793.png)
 
 - 可以用协作描述对象之间任何类型的短期交互，不仅是模式
 
@@ -3077,7 +3007,7 @@ loop(min times,max times)
 - 构件用于将系统组织为可管理、可复用、可替换的软件块
   - 设计软件系统时，不是直接从需求开始定义系统中的类；而是对系统的高层构造块进行规划，建立架构、管理复杂性和依赖性
 - UML的构件图对系统中的构件建模
-  ![20220928142029](UML笔记.assets/20220928142029.png)
+  ![20220928142029](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121459615.png)
 
 
 ## What Is a Component?
@@ -3115,14 +3045,14 @@ loop(min times,max times)
     - 右上角图标可选
     - UML1.X的表示法
 
-  ![20220928142125](UML笔记.assets/20220928142125.png)
+  ![20220928142125](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500463.png)
 
 - 构造型 `<<subsystem>>`
 
   - 说明构件实际上是子系统
   - 子系统是作为较大系统一部分的次级或从属系统
 
-  ![20220928142133](UML笔记.assets/20220928142133.png)
+  ![20220928142133](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500674.png)
 
 
 ## 供接口和需接口
@@ -3158,7 +3088,7 @@ loop(min times,max times)
   - socket symbol 表示需接口
   - 将接口的名字写在符号旁
 
-  ![20220928142239](UML笔记.assets/20220928142239.png)
+  ![20220928142239](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500832.png)
 
 - Stereotype Notation for Interfaces
 
@@ -3167,7 +3097,7 @@ loop(min times,max times)
   - 如果构件需要一个接口，画一个从构件到接口的依赖（dependency）箭头
   - 这种表示法能够描述供需接口的操作等内部细节
 
-  ![20220928142359](UML笔记.assets/20220928142359.png)
+  ![20220928142359](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500527.png)
 
 - Listing Component Interfaces
 
@@ -3177,7 +3107,7 @@ loop(min times,max times)
   - 还可以加上 `<<artifacts>>` 列出制品或物理文件
     - 取决于建模工具的特性
 
-  ![20220928142423](UML笔记.assets/20220928142423.png)
+  ![20220928142423](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500541.png)
 
 
 ## 描述一起工作的构件
@@ -3196,20 +3126,20 @@ loop(min times,max times)
   - 从构件的需接口到另一构件的供接口画一个依赖箭头
   - 例如，ConversionManagement构件需要 DataSource接口，该接口由 BlogDataSource构件提供
 
-  ![20220928142502](UML笔记.assets/20220928142502.png)
+  ![20220928142502](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500120.png)
 
 - 省略依赖箭头的表示法
 
   - 组装连接器表示法（assembly connector notation）
 
-  ![20220928142523](UML笔记.assets/20220928142523.png)
+  ![20220928142523](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500603.png)
 
 - 表示法二
 
   - 省略接口，直接画一个构件之间的依赖关系
   - 也可以把构件的内部细节表示出来
 
-  ![20220928142544](UML笔记.assets/20220928142544.png)
+  ![20220928142544](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500285.png)
 
 - 选择表示法时要注意
 
@@ -3221,10 +3151,10 @@ loop(min times,max times)
     - 强调了构件依赖并列出了构件功能的物理实现制品，可以清楚地看到部署时需要哪些构件和相关的文件
 
 - 焦点是系统中的关键构件和接口
-  ![20220928142612](UML笔记.assets/20220928142612.png)
+  ![20220928142612](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500076.png)
 
 - 着重于构件依赖和实现制品
-  ![20220928142639](UML笔记.assets/20220928142639.png)
+  ![20220928142639](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500561.png)
 
 
 ## 实现构件的类
@@ -3245,20 +3175,20 @@ loop(min times,max times)
   - Blog 和Entry 类实现了 BlogDataSource 构件
   - Blog 和Entry之间是聚合关系
 
-  ![20220928142750](UML笔记.assets/20220928142750.png)
+  ![20220928142750](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500507.png)
 
 - 表示法二
 
   - 将构件的实现类画在构件外
   - 将类用实现依赖连接到构件
 
-  ![20220928142805](UML笔记.assets/20220928142805.png)
+  ![20220928142805](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500168.png)
 
 - 表示法三
 
   - 在构件中 `<<realizations>>` 部分列举
 
-  ![20220928142825](UML笔记.assets/20220928142825.png)
+  ![20220928142825](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500967.png)
 
 - 如何选择使用哪种表示法？
 
@@ -3277,15 +3207,13 @@ loop(min times,max times)
     - 将相关的接口连接到该端口
     - 端口显示构件的独特使用并将“类似”的接口放在一组
 
-  ![20220928143001](UML笔记.assets/20220928143001.png)
+  ![20220928143001](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500077.png)
 
 - 可以显示构件的内部结构
 
   - 对它的组成部分、属性和连接器建模
 
-  ![20220928143012](UML笔记.assets/20220928143012.png)
-
-  ![20220928143041](UML笔记.assets/20220928143041.png)
+  ![20220928143012](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500613.png)
 
 - 构件有自己独特的构造块来表示端口和内部结构
 
@@ -3316,7 +3244,7 @@ loop(min times,max times)
   - Blog 类实现了 DataSource 接口
   - Entry 类需要 Logger 接口
 
-  ![20220928143116](UML笔记.assets/20220928143116.png)
+  ![20220928143116](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500833.png)
 
 - 可以这样看代理连接器
 
@@ -3330,7 +3258,7 @@ loop(min times,max times)
   - ConversionManagement 构件中包含Controller和BlogParser构件
   - ConversionManagement 构件对外提供了FeedProvider接口，但这个接口实际上是由Controller组件实现的
 
-  ![20220928143146](UML笔记.assets/20220928143146.png)
+  ![20220928143146](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500449.png)
 
 
 ## 组装连接器
@@ -3340,18 +3268,18 @@ loop(min times,max times)
   - 说明一个构件需要另一构件提供的接口
   - 用于描述构件的内部结构，表示内部构件通过接口一起工作
 
-  ![20220928143221](UML笔记.assets/20220928143221.png)
+  ![20220928143221](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500512.png)
 
 - 组装连接器是为表示构件的组合结构而定义的一种连接器
 
   - 也可以用来表示构件通过接口相互依赖
 
-  ![20220928143348](UML笔记.assets/20220928143348.png)
+  ![20220928143348](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500494.png)
 
 
 ## 连接器小结
 
-![20220928143403](UML笔记.assets/20220928143403.png)
+![20220928143403](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500778.png)
 
 
 ## 构件视图
@@ -3368,19 +3296,19 @@ loop(min times,max times)
 
 ## 端口和接口
 
-![20220928143429](UML笔记.assets/20220928143429.png)
+![20220928143429](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500180.png)
 
 ## 构件的黑盒视图
 
-![20220928143440](UML笔记.assets/20220928143440.png)
+![20220928143440](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500902.png)
 
 ## 构件的白盒视图
 
-![20220928143512](UML笔记.assets/20220928143512.png)
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500262.png" alt="20220928143512" style="zoom:80%;" />
 
 ## 总结
 
-<img src="UML笔记.assets/image-20231002123144785.png" alt="image-20231002123144785" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121500560.png" alt="image-20231002123144785" style="zoom: 67%;" />
 
 # 包图：组织系统模型:crossed_swords:
 
@@ -3393,46 +3321,42 @@ loop(min times,max times)
 
 包的名字在没有显示包内的元素时也可以显示在包中间,  每个包代表系统的一个特定关注方面
 
-<img src="UML笔记.assets/20220928201002.png" alt="20220928201002" style="zoom:75%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501125.png" alt="20220928201002" style="zoom:75%;" />
 
 ## 包的内容
 
-<img src="UML笔记.assets/20220928201729.png" alt="20220928201729" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501428.png" alt="20220928201729" style="zoom: 80%;" />
 
 **包的内容有两种表示方法**
 
 - 将内容画在包记号中，这时将包的名字写在tab上
 - 将内容画在包外，用线（嵌套）连接到包，如右图
 
-<img src="UML笔记.assets/20220928201025.png" alt="20220928201025" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501256.png" alt="20220928201025" style="zoom: 67%;" />
 
 **一个包还可以包含其他的包**
 
 - 可以多层嵌套
 
-<img src="UML笔记.assets/20220928201042.png" alt="20220928201042" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501020.png" alt="20220928201042" style="zoom: 67%;" />
 
 **显示嵌套内层的包及其内容**
 
 - 将包展开：用 packageA::packageB::packageC 如此类推表示
 
-<img src="UML笔记.assets/20220928201059.png" alt="20220928201059" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501183.png" alt="20220928201059" style="zoom: 67%;" />
 
 ### Namespace 名空间
 
 - 限定名
-  ![20220928201139](image/UML/20220928201139.png)
+  ![20220928201139](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501155.png)
 - 名字唯一
-  ![20220928201150](UML笔记.assets/20220928201150.png)
-
-
+  <img src="UML笔记.assets/20220928201150.png" alt="20220928201150" style="zoom:67%;" />
 
 ### 元素可见性
 
 包中的元素可以具有public 或 private可见性
-<img src="UML笔记.assets/20220928201225.png" alt="20220928201225" style="zoom:80%;" />
-
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231209205443710.png" alt="image-20231209205443710" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501439.png" alt="20220928201225" style="zoom:80%;" />
 
 ## 包的关系
 
@@ -3441,10 +3365,10 @@ loop(min times,max times)
 **如果一个包中的类要使用另一个包中的元素，则引起包之间的依赖**
 
 如图，如果A中一个元素使用B中的一个元素，则包A依赖包B
-               <img src="UML笔记.assets/20220928201246.png" alt="20220928201246" style="zoom:80%;" />
+               <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501608.png" alt="20220928201246" style="zoom:80%;" />
 
 理解包之间的依赖有助于分析系统的稳定性
-              <img src="UML笔记.assets/20220928201313.png" alt="20220928201313" style="zoom:80%;" />
+              <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501012.png" alt="20220928201313" style="zoom:80%;" />
 
 ### public import关系
 
@@ -3458,16 +3382,16 @@ loop(min times,max times)
 
 - 用标注有 `<<import>>` 构造型的依赖箭头表示
 
-![20220928201338](UML笔记.assets/20220928201338.png)
+![20220928201338](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501296.png)
 
 - users 包导入了security包
-  ![20220928201513](UML笔记.assets/20220928201513.png)
+  ![20220928201513](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501191.png)
 
 - 一个包也可以只导入另一个包中的某个特定元素
 
   - users 包只导入了security包中的 Credentials 元素，而不是整个包
 
-  ![20220928201530](UML笔记.assets/20220928201530.png)
+  ![20220928201530](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501621.png)
 
 ### private import关系
 
@@ -3482,7 +3406,7 @@ loop(min times,max times)
 
 + A 可以看到C中的public元素，但不能看到D中的
 
-​                      <img src="UML笔记.assets/20220928201608.png" alt="20220928201608" style="zoom: 67%;" />
+​                      <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121501950.png" alt="20220928201608" style="zoom: 67%;" />
 
 ## 管理包的依赖关系
 
@@ -3490,7 +3414,7 @@ loop(min times,max times)
 
 - 一个包的改变会影响所有依赖于它的包
 - 例如，下图中任一个包的修改都会影响到其他包
-                       <img src="UML笔记.assets/20220928201624.png" alt="20220928201624" style="zoom:80%;" />    
+                       <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121502224.png" alt="20220928201624" style="zoom:80%;" />    
 
 原则
 
@@ -3502,7 +3426,7 @@ loop(min times,max times)
 去除循环依赖的方法
 
 - 析出一个新的包，让两个包都依赖这个新包
-  <img src="UML笔记.assets/20220928201650.png" alt="20220928201650" style="zoom:80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121502714.png" alt="20220928201650" style="zoom:80%;" />
 - 考虑能否将它们放在同一个包中
 
 ## 组织用例
@@ -3515,67 +3439,63 @@ loop(min times,max times)
 
 - 将用例组织成更高的层次有助于组织模型，可以看到参与者与系统的哪部分交互           
 
-  <img src="UML笔记.assets/20220928201716.png" alt="20220928201716" style="zoom: 80%;" />
+  <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121502999.png" alt="20220928201716" style="zoom: 80%;" />
 
-<img src="UML笔记.assets/20220928201729.png" alt="20220928201729" style="zoom: 80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121502572.png" alt="20220928201729" style="zoom: 80%;" />
 
 ## 例子
 
 ### 图书馆系统
 
-![20220928201749](UML笔记.assets/20220928201749.png)
-
-### 管理系统模型
-
-![20220928201811](UML笔记.assets/20220928201811.png)
+![20220928201749](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121502722.png)
 
 ### 分层应用
 
-![img](UML笔记.assets/package-diagram-example-layerd-application.png)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121502921.png)
 
 ### MVC结构
 
-​                                    ![img](UML笔记.assets/package-diagram-example-mvc-structure.png)
+​                                    ![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121502738.png)
 
 ### 股票交易系统
 
-![img](UML笔记.assets/uml-package-diagram-example-stocks-trading-system.png)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121502765.png)
 
 ### 售票系统
 
-![img](UML笔记.assets/package-diagram-example-ticket-selling-system.png)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121503270.png)
 
 ### 通用业务系统
 
-![img](UML笔记.assets/uml-package-diagram-example-general-business-system.png)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121503443.png)
 
 
 
 ### 其他示例
 
-![image-20231211195751886](UML%E7%AC%94%E8%AE%B0.assets/image-20231211195751886.png)
+![image-20231211195751886](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121503930.png)
 
-![image-20231209205523824](UML%E7%AC%94%E8%AE%B0.assets/image-20231209205523824.png)
+![image-20231209205523824](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121503061.png)
 
-![](UML%E7%AC%94%E8%AE%B0.assets/image-20231211221112889.png)
+![](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121503278.png)
 
-![image-20231211221206000](UML%E7%AC%94%E8%AE%B0.assets/image-20231211221206000.png)
+![image-20231211221206000](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121503579.png)
 
-![](UML%E7%AC%94%E8%AE%B0.assets/image-20231211221311985.png)
+![](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121503383.png)
 
 # 实现图:crossed_swords:
 
-![image-20231211222336063](UML%E7%AC%94%E8%AE%B0.assets/image-20231211222336063.png)
+![image-20231211222336063](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121503726.png)
 
 ## 常用元素
 
-![img](UML笔记.assets/c82577a60f123449a30a8d10b46c3282.png)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504454.png)
 
 ## 构件图
 
 ### 组件
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/v2-6dce3a2ef8d919a9fde2bb929c6d5e6a_r.jpg)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504621.jpg)
 
 
 
@@ -3583,7 +3503,7 @@ loop(min times,max times)
 
 标识接口的构件表示方法有3种:
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/v2-c5c53df4e05a0db92fce5747201b387b_r.jpg)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504674.jpg)
 
 ### 依赖关系
 
@@ -3593,7 +3513,7 @@ loop(min times,max times)
 
 箭头方向: 指向需要的组件
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/v2-4beaa445183f960ef490bf93d1bd0d8e_r.jpg)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504385.jpg)
 
 ### 接口
 
@@ -3606,7 +3526,7 @@ loop(min times,max times)
 
 在UML图中，**接口和构件**之间用**实线**连接表示**实现关系**；而**接口和构件**之间用**虚线箭头**连接则表示**依赖关系**。
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/v2-b6ffee3d37fda6110e00dbffb3309543_720w.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504739.webp)
 
 - 导出接口由提供操作的构件提供。
 - 导入接口供访问操作的构件使用。
@@ -3615,31 +3535,31 @@ loop(min times,max times)
 
 #### 示例
 
-![image-20231211223327900](UML%E7%AC%94%E8%AE%B0.assets/image-20231211223327900.png)
+![image-20231211223327900](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504736.png)
 
 #### 示例
 
-![img](UML%E7%AC%94%E8%AE%B0.assets/v2-22fdda2084cb10df57a0fb394701e358_720w.webp)
+![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504852.webp)
 
 #### 示例
 
-![image-20231209204422402](UML%E7%AC%94%E8%AE%B0.assets/image-20231209204422402.png)
+![image-20231209204422402](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504977.png)
 
-![](UML%E7%AC%94%E8%AE%B0.assets/image-20231209204436311.png)
+![](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504073.png)
 
-![image-20231209204458303](UML%E7%AC%94%E8%AE%B0.assets/image-20231209204458303.png)
+![image-20231209204458303](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504857.png)
 
-![image-20231209204554939](UML%E7%AC%94%E8%AE%B0.assets/image-20231209204554939.png)
+![image-20231209204554939](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504668.png)
 
-![](UML%E7%AC%94%E8%AE%B0.assets/image-20231209204636153.png)
+![](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504527.png)
 
 #### 示例
 
-![image-20231209204625402](UML%E7%AC%94%E8%AE%B0.assets/image-20231209204625402.png)
+![image-20231209204625402](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504679.png)
 
-![image-20231209204614402](UML%E7%AC%94%E8%AE%B0.assets/image-20231209204614402.png)
+![image-20231209204614402](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504951.png)
 
-![image-20231209205028413](UML%E7%AC%94%E8%AE%B0.assets/image-20231209205028413.png)
+![image-20231209205028413](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121504844.png)
 
 ## 部署图
 
@@ -3667,26 +3587,26 @@ UML的部署图显示系统的物理视图
 
 + 如图，本系统的硬件是一台PC
 
-  ​                        <img src="UML笔记.assets/20220928201914.png" alt="20220928201914" style="zoom: 80%;" />
+  ​                        <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506293.png" alt="20220928201914" style="zoom: 80%;" />
 
 #### 软件节点
 
 - 构造型 `<<executionEnvironment>>` 强调节点是执行环境
 
 - 如图，一个应用服务器节点
-                       ![20220928202228](UML笔记.assets/20220928202228.png)
+                       ![20220928202228](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506841.png)
 
 
 注意:  软件节点要在硬件上运行，不能单独存在，如图
 
-  ​                <img src="UML笔记.assets/20220928202235.png" alt="20220928202235" style="zoom:80%;" />
+  ​                <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506328.png" alt="20220928202235" style="zoom:80%;" />
 
 #### 节点实例
 
 - 用 name : Node-type 记号表示
 - 可以强调两个节点是同一类型的不同实例
 
-<img src="UML笔记.assets/20220928202300.png" alt="20220928202300" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506896.png" alt="20220928202300" style="zoom:80%;" />
 
 ##### 节点间的通讯
 
@@ -3697,19 +3617,19 @@ UML的部署图显示系统的物理视图
   - 表示法：连接两个节点的实线
   - 通讯的类型可以由构造型表示
   - 如图，使用TCP/IP通讯的PC和Server
-    ![20220928202335](UML笔记.assets/20220928202335.png)
+    ![20220928202335](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506724.png)
 
 ##### 通讯路径
 
 可以表示执行环境节点之间的通讯路径
-![20220928202349](UML笔记.assets/20220928202349.png)
+![20220928202349](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506754.png)
 
 ### 组件（Artifact）
 
 构件图中的元素。构件是软件开发过程中的产物，包括过程模型（比如用例图、设计图等等）、源代码、可执行程序、设计文档、测试报告、需求原型、用户手册等等。
 
 - 下图表示一个简单的工件软件制品（artifact）
-  ![20220928201941](UML笔记.assets/20220928201941.png)
+  ![20220928201941](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506636.png)
   - 这个例子中是一个JAR文件，名为 3dpacman.jar
 - 构造型`<<artifact>>`的表示法
 
@@ -3725,9 +3645,9 @@ UML的部署图显示系统的物理视图
 - 要表示工件之间的依赖关系时(节点内虚线箭头，节点外再加`<<deploy>>`依赖表示)，列表用方式2
 - 有很多工件时，用方式3
 
-![image-20230929002430935](UML笔记.assets/image-20230929002430935.png)
+![image-20230929002430935](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506230.png)
 
-<img src="UML笔记.assets/image-20230929002517544.png" alt="image-20230929002517544" style="zoom:80%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506758.png" alt="image-20230929002517544" style="zoom:80%;" />
 
 #### 节点和工件的关系
 
@@ -3761,8 +3681,8 @@ Deployment Specifications
 
 部署规约实例
 
-​                           <img src="UML笔记.assets/20220928202415.png" alt="20220928202415" style="zoom: 80%;" />
-​                          <img src="UML笔记.assets/20220928202424.png" alt="20220928202424" style="zoom: 80%;" />
+​                           <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506804.png" alt="20220928202415" style="zoom: 80%;" />
+​                          <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506394.png" alt="20220928202424" style="zoom: 80%;" />
 
 #### 将部署规约与其描述的部署联系起来
 
@@ -3772,13 +3692,13 @@ Deployment Specifications
 
 - 都在部署的目标节点内
 
-![20220928202440](UML笔记.assets/20220928202440.png)
+![20220928202440](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506476.png)
 
 ##### 方法二
 
 将部署规约附到部署依赖上
 
-![20220928202453](UML笔记.assets/20220928202453.png)
+![20220928202453](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121506295.png)
 
 ### 使用部署图
 
@@ -3788,31 +3708,27 @@ Deployment Specifications
 
   - 例如，系统的体系结构、客户访问方式等
 
-  ![20220928202509](UML笔记.assets/20220928202509.png)
+  ![20220928202509](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121507637.png)
 
   
 
 **在软件开发的后期，详细的部署图可以用来说明系统的实现，作为安装系统的蓝图**
 
-  ![20220928202533](UML笔记.assets/20220928202533.png)
-
-### 部署图建模——嵌入式系统
-
-![20220928202543](UML笔记.assets/20220928202543.png)
+  ![20220928202533](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121507006.png)
 
 ### 部署图建模——Client/Server系统
 
-![20220928202554](UML笔记.assets/20220928202554.png)
+![20220928202554](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121507471.png)
 
 ### 部署图建模——完全分布式系统
 
-![20220928202604](UML笔记.assets/20220928202604.png)
+![20220928202604](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121507070.png)
 
 
 
  某嵌入式系统（车载主板）部署图（局部）
 
-![image-20231009103440590](UML笔记.assets/image-20231009103440590.png)
+![image-20231009103440590](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121507981.png)
 
 
 
@@ -3822,50 +3738,39 @@ Deployment Specifications
 
 **大型商场信息管理系统部署图**
 
-![image-20231009103814132](UML笔记.assets/image-20231009103814132.png)
+![image-20231009103814132](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121507104.png)
 
 #### 示例
 
 **输变电智能诊断部署图**
 
-![image-20231009104009424](UML笔记.assets/image-20231009104009424.png)
+![image-20231009104009424](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121507065.png)
 
 #### 示例
 
 **高可用K8S-BM部署图**
 
-![image-20231009104112135](UML笔记.assets/image-20231009104112135.png)
+![image-20231009104112135](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121508582.png)
 
 #### 示例
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231209205144891.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121508064.png" style="zoom:67%;" />
 
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231211221814824.png" style="zoom:67%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121508195.png" style="zoom:67%;" />
 
-![image-20231209205208525](UML%E7%AC%94%E8%AE%B0.assets/image-20231209205208525.png)
+![image-20231209205208525](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121508337.png)
 
-![](UML%E7%AC%94%E8%AE%B0.assets/image-20231209205225826.png)
+![](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121508078.png)
 
 ## 总结
 
-![image-20230929002020107](UML笔记.assets/image-20230929002020107.png)
+![image-20230929002020107](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121508681.png)
 
 #  生成时序图、类图、流程图、状态图以及用例图
 
 [PlantUML教程及主题模板](https://blog.csdn.net/u012107143/article/details/119361405)
 
-PlantUML可以使用[在线的版本](http://www.plantuml.com/plantuml/umla/SoWkIImgAStDuOhMYbNGrRLJUBgduLd7TYu81HPvjdRnqnqxdkpT_tpAYkTTsvurD2fOAJpRt_1iosvaPK_sJ7m-Pm5C0PIBhE1fs-xdkoV3542vN9YcWnM_REX_DcKzJ36KYqlnq-sRNau1sGDosEOLG3ONidxSldYwTiQpDVkua9rEqCi8Rn1MJ9epiClrht-oU-cB_RDVBEnvicl9incJeOOYh9g-uDdcgH11g5VGv91rGzsFJmLoS0ALFfixdukBoo4rBmMOJW00)，也可以使用编辑器VSCode安装插件
-
-<img src="UML%E7%AC%94%E8%AE%B0.assets/b0541a1ee4e7401095d2a343ab10544c.png" alt="b0541a1ee4e7401095d2a343ab10544c.png" style="zoom:50%;" />
-
-```bash
-@startuml
-@enduml
-```
-
-<img src="UML%E7%AC%94%E8%AE%B0.assets/image-20231124093537563.png" alt="image-20231124093537563" style="zoom:67%;" />
-
-至此本地环境就准备好了 ，接下来就是逐步讲解每个组件的使用了
+PlantUML可以使用[在线的版本](http://www.plantuml.com/plantuml/umla/SoWkIImgAStDuOhMYbNGrRLJUBgduLd7TYu81HPvjdRnqnqxdkpT_tpAYkTTsvurD2fOAJpRt_1iosvaPK_sJ7m-Pm5C0PIBhE1fs-xdkoV3542vN9YcWnM_REX_DcKzJ36KYqlnq-sRNau1sGDosEOLG3ONidxSldYwTiQpDVkua9rEqCi8Rn1MJ9epiClrht-oU-cB_RDVBEnvicl9incJeOOYh9g-uDdcgH11g5VGv91rGzsFJmLoS0ALFfixdukBoo4rBmMOJW00)，也可以使用编辑器VSCode安装PlantUML插件
 
 实现过程: 
 
