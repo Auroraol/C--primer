@@ -61,7 +61,7 @@
 
 <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121400059.png" alt="20220920201100" style="zoom:67%;" />
 
-<img src="UML.assets/image-20230920235710476.png" alt="image-20230920235710476" style="zoom: 60%;" />
+<img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121523063.png" alt="image-20230920235710476" style="zoom: 60%;" />
 
 ## 接口（Interface）
 
@@ -103,8 +103,6 @@
 ### 四种表示方式
 
 ![image-20230912192721213](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421163.png)
-
-![img](https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421106.png)
 
 注意:  
 
@@ -153,6 +151,8 @@ private:
 - 可见性特征用于控制对属性、操作甚至整个类的访问，以有效地实施封装
 - UML 的四种不同的可见性分类
   <img src="https://raw.githubusercontent.com/Auroraol/Drawing-bed/main/img/202312121421416.png" alt="20220920201220" style="zoom:80%;" />
+
+![img](UML%E7%AC%94%E8%AE%B0.assets/202312121421106.png)
 
 ### 类的属性（attribute）
 
@@ -1328,7 +1328,7 @@ ATM 用例图示例
   + 例加在一个报销系统中,多个部门的报销申请需要经过审批
     后才能最终合并为一个结果，可以使用合并技巧来表示这个过程。
 
-## [对象节点](https://www.cnblogs.com/kingwz/p/16729719.html#对象)
+## 对象节点
 
 数据对象有时候是过程的重要方面
 
